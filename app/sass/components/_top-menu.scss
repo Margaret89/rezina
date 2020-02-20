@@ -1,0 +1,31 @@
+/*-------------- top-menu -----------------*/
+.top-menu{
+	&__list,
+	&__item{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__list{
+		display: flex;
+		align-items: center;
+	}
+
+	&__item,
+	&__item a{
+		@include font(normal, bold, 13px, 1.2, $color-grey);
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 0.55px;
+		transition: all 0.3s ease 0s;
+	}
+
+	&__item{
+		margin-right: 32px;
+	}
+
+	&__item a:hover{
+		color: $color-orange;
+	}
+}

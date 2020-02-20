@@ -1,0 +1,117 @@
+/*-------------- small-basket -----------------*/
+.small-basket{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	// position: relative;
+
+	&__icon{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background: url(#{$path-img}/sprite.png) no-repeat -5px -35px;
+		position: relative;
+	}
+
+	&__icon:hover{background-position: -40px -35px;}
+
+	&__num{
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		background: $color-red;
+		@include font(normal, bold, 10px, 18px, #fff);
+		text-align: center;
+		position: absolute;
+		top: -10px;
+		right: -10px;
+	}
+
+	&__content{
+		display: none;
+		width: 370px;
+		color: #000;
+		text-align: left;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		z-index: 10;
+	}
+
+	&:hover &__content{
+		display: block;
+	}
+
+	&__item{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #fff;
+		padding: 12px;
+		text-decoration: none;
+		position: relative;
+		
+	}
+
+	&__item::before{
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to bottom, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 100%);
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: all 0.3s ease 0s;
+	}
+
+	&__item:hover::before{
+		opacity: 1;
+	}
+
+	&__item:not(:last-child){
+		margin-bottom: 1px;
+	}
+
+	&__img,
+	&__val,
+	&__info{
+		position: relative;
+	}
+
+	&__img{
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	&__info{
+		width: calc(100% - 170px);
+		@include font(normal, normal, 14px, 1.4, #000);
+	}
+
+	&__val{
+		width: 80px;
+		@include font(normal, bold, 14px, 1.4, #000);
+		text-align: right;
+	}
+
+	&__result{
+		background: #fbfbfb;
+		padding: 17px 12px;
+		text-align: right;
+		box-shadow: inset 0px 16px 26px 0px rgba(0,0,0,0.04);
+	}
+
+	&__sum{
+		@include font(normal, bold, 18px, 1.3, #000);
+		margin-bottom: 12px;
+	}
+}

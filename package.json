@@ -27,6 +27,10 @@
     "gulp-spritesmith": "0.0.2",
     "gulp-uglify": "^3.0.2"
   },
+  "browserslist": [
+    "last 3 version",
+    ">1%"
+  ],
   "dependencies": {
     "gulp-pug": "^4.0.1"
   }

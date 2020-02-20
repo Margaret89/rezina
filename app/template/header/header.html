@@ -1,9 +1,242 @@
-<header>
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<p>Header</p>
+<header class="header">
+	<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="header-top__content">
+						<nav class="top-menu">
+							<ul class="top-menu__list">
+								<li class="top-menu__item"><a href="#">Шины</a></li>
+								<li class="top-menu__item"><a href="#">Диски</a></li>
+								<li class="top-menu__item"><a href="#">Акции</a></li>
+								<li class="top-menu__item"><a href="#">Доставка</a></li>
+								<li class="top-menu__item"><a href="#">Блог</a></li>
+								<li class="top-menu__item"><a href="#">Возврат</a></li>
+								<li class="top-menu__item"><a href="#">Гарантии</a></li>
+								<li class="top-menu__item"><a href="#">Оплата</a></li>
+								<li class="top-menu__item"><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+
+						<div class="header-top-btn">
+							<a href="#" class="header-top-btn__item">
+								<span class="header-top-btn__icon header-top-btn__icon_wish"></span>
+							</a>
+
+							<div class="header-top-btn__item">
+								<div class="small-basket">
+									<div class="small-basket__icon"><span class="small-basket__num">2</span></div>
+
+									<div class="small-basket__content">
+										<div class="small-basket__list">
+											<a href="#" class="small-basket__item">
+												<div class="small-basket__img" style="background-image: url(img/product_basket.png);"></div>
+												<div class="small-basket__info">
+													<div class="small-basket__name">Continental SportContact 6</div>
+													<div class="small-basket__article">235/35 R19 91Y</div>
+												</div>
+												
+												<div class="small-basket__val">
+													<div class="small-basket__count">x2</div>
+													<div class="small-basket__price">6 850 р.</div>
+												</div>
+											</a>
+
+											<a href="#" class="small-basket__item">
+												<div class="small-basket__img" style="background-image: url(img/product_basket.png);"></div>
+												<div class="small-basket__info">
+													<div class="small-basket__name">Continental SportContact 6</div>
+													<div class="small-basket__article">235/35 R19 91Y</div>
+												</div>
+												
+												<div class="small-basket__val">
+													<div class="small-basket__count">x2</div>
+													<div class="small-basket__price">6 850 р.</div>
+												</div>
+											</a>
+										</div>
+
+										<div class="small-basket__result">
+											<div class="small-basket__sum">Итого: 7100 руб.</div>
+											<a href="#" class="btn btn_border">Оформить заказ</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<a href="#" class="header-top-btn__item">
+								<span class="header-top-btn__icon header-top-btn__icon_profile"></span>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
+	</div><!-- end header-top -->
+
+	<div class="header-content">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-3">
+					<div class="header-content__logo">
+						<a href="#">
+							<img src="img/logo.png" alt="">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-3">
+					<div class="info-contact">
+						<div class="info-contact__icon">
+							<img src="img/ic-phone.png" alt="">
+							<div class="info-msg">
+								<div class="info-msg__item info-msg__item_wu"></div>
+								<div class="info-msg__item info-msg__item_vb"></div>
+							</div>
+						</div>
+						<div class="info-contact__text">
+							<a href="tel:+78123172216">+7 (812) 317 22 16</a>
+							<a href="tel:+79119437788">+7 (911) 943 77 88</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-3">
+					<div class="info">
+						<div class="info__icon"><img src="img/ic-clock.png" alt=""></div>
+
+						<div class="info__text">
+							<div class="info-time">
+								<div class="info-time__item">
+									<span class="info-time__title">Пн-Пт:</span> с 11:00 до 20:00
+								</div>
+								<div class="info-time__item">
+									<span class="info-time__title">Сб-Вс:</span> с 12:00 до 19:00
+								</div>
+							</div>
+
+							<div class="info__label">Обязательно заранее звоните!</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-3">
+					<div class="info">
+						<div class="info__icon"><img src="img/ic-address.png" alt=""></div>
+
+						<div class="info__text">
+							Санкт-Петербург
+
+							<div class="info__label">Воздухоплавательная д.19</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- end header-content -->
+
+	<div class="header-bottom">
+		<div class="category-tab js-tabs-page">
+			<div class="category-tab__top">
+				<ul class="category-tab__list js-tabs-page-list">
+					<li class="category-tab__item js-tabs-page-item" data-item="cat-tab1">
+						<div class="category-tab__icon" style="background-image: url(img/ic-tire.png);"></div>
+						<div class="category-tab__title">Шины</div>
+					</li>
+					<li class="category-tab__item js-tabs-page-item" data-item="cat-tab2">\
+						<div class="category-tab__icon" style="background-image: url(img/ic-autodesk.png);"></div>
+						<div class="category-tab__title">Диски</div>
+					</li>
+				</ul>
+
+				<form class="search-form">
+					<input type="text" name="search" placeholder="Поиск по сайту">
+					<input type="submit" value="Поиск">
+				</form>
+			</div>
+
+			<div class="category-tab__content js-tabs-page-content">
+				<div id="cat-tab1" class="category-tab__content-item js-tabs-page-content-item js-tabs-page-content-item">
+					<div class="filter-tab js-tabs-page">
+						<ul class="filter-tab__list js-tabs-page-list">
+							<li class="filter-tab__item js-tabs-page-item" data-item="filter-tab1">Tab1</li>
+							<li class="filter-tab__item js-tabs-page-item" data-item="filter-tab2">Tab2</li>
+						</ul>
+
+						<div class="filter-tab__content js-tabs-page-content">
+							<div id="filter-tab1" class="filter-tab__content-item js-tabs-page-content-item js-tabs-page-content-item">
+								<form class="form-filter">
+									<div class="filter">
+										<div class="filter__item">
+											<label class="filter__label" for="all">Сезонность</label>
+											<select id="all" class="select-site js-select">
+												<option value="winter">Зима</option>
+												<option value="summer">Лето</option>
+											</select>
+										</div>
+
+										<div class="filter__item">
+											<label class="filter__label" for="width">Ширина</label>
+											<select id="width" class="select-site js-select">
+												<option value="265">265</option>
+												<option value="300">300</option>
+												<option value="350">350</option>
+												<option value="400">400</option>
+												<option value="450">450</option>
+											</select>
+										</div>
+
+										<div class="filter__item">
+											<label class="filter__label" for="front">Профиль</label>
+											<select id="front" class="select-site js-select">
+												<option value="65">65</option>
+												<option value="70">70</option>
+												<option value="85">85</option>
+											</select>
+										</div>
+
+										<div class="filter__item">
+											<label class="filter__label" for="diameter">Диаметр</label>
+											<select id="diameter" class="select-site js-select">
+												<option value="17">R: 17</option>
+												<option value="20">R: 20</option>
+												<option value="25">R: 25</option>
+											</select>
+										</div>
+
+										<div class="filter__item filter__item_long">
+											<label class="filter__label" for="maker">Производитель шин</label>
+											<select id="maker" class="select-site js-select" data-placeholder="Выбрать">
+												<option></option>
+												<option value="Amtel">Amtel</option>
+												<option value="Barum">Barum</option>
+											</select>
+
+											<div class="input-check input-check_white">
+												<input type="checkbox" id="checkbox1" checked="checked">
+												<label for="checkbox1" class="input-check__label"><span class="input-check__mark"></span>RunFlat</label>
+											</div>
+										</div>
+
+										<div class="filter__btn">
+											<input type="submit" class="btn btn_border btn_white" value="Показать">
+
+											<a href="#" class="filter__reset">Сбросить настройки</a>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div id="filter-tab2" class="filter-tab__content-item js-tabs-page-content-item js-tabs-page-content-item">
+								 Фильтр по марке авто
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="cat-tab2" class="category-tab__content-item js-tabs-page-content-item js-tabs-page-content-item">
+					Фильтр для дисков
+				</div>
+			</div>
+		</div>
+	</div><!-- end header-bottom -->
 </header>

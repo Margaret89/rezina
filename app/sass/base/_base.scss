@@ -92,6 +92,22 @@ h6,
 	margin-bottom: 10px;
 }
 
+ul,
+ol{
+	padding: 0 0 0 12px;
+	margin: 0;
+	color: #000;
+}
+
+ul{
+	list-style-type: disc;
+}
+
+li{
+	padding-left: 8px;
+	margin-bottom: 10px;
+}
+
 .wrapper{
 	display: flex;
 	flex-direction: column;
@@ -112,24 +128,26 @@ input[type="submit"].btn{
 	height: 50px;
 	min-width: 130px;
 	background: $color-orange;
+	border: 0;
 	border: 2px solid $color-orange;
-	border-radius: 4px;
 	@include font(normal, bold, 14px, 48px, #fff);
 	text-transform: uppercase;
 	padding: 0 20px;
 	text-align: center;
 	cursor: pointer;
 	text-decoration: none;
+	position: relative;
 }
 
 .btn:hover,
 input[type="submit"].btn:hover{
-	background: #ec8a18;
 	border-color: #ec8a18;
+	box-shadow: #ec8a18 0 0px 0px 40px inset;
 }
 
 .btn_border,
 input[type="submit"].btn_border{
+	border: 2px solid $color-orange;
 	background: transparent;
 	color: $color-orange;
 	transition: all 0.3s ease 0s;
@@ -137,7 +155,7 @@ input[type="submit"].btn_border{
 
 .btn_border:hover,
 input[type="submit"].btn_border:hover{
-	background: $color-orange;
+	box-shadow: $color-orange 0 0px 0px 40px inset;
 	border-color: $color-orange;
 	color: #fff;
 }
