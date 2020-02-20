@@ -50,3 +50,103 @@
 		background: linear-gradient(to bottom, rgba(64,69,82,1) 0%, rgba(44,47,56,1) 100%);
 	}
 }
+
+.header-middle{
+	background: $color-dark-blue;
+	color: #fff;
+	padding: 27px 0;
+}
+
+.info-contact{
+	display: flex;
+
+	&__text,
+	&__text a{
+		@include font(normal, normal, 16px, 1.2, #fff);
+		text-decoration: none;
+		transition: all 0.3s ease 0s;
+	}
+
+	&__text{
+		width: 145px;
+		margin-left: 10px;
+	}
+
+	&__icon{
+		max-width: calc(100% - 155px);
+		text-align: right;
+	}
+
+	&__text a{
+		display: inline-block;
+	}
+
+	&__text a:not(:last-child){
+		margin-bottom: 20px;
+	}
+
+	&__text a:hover{
+		color: $color-orange;
+	}
+}
+
+.info-msg{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+
+	&__item{
+		display: inline-block;
+		width: 36px;
+		height: 36px;
+		background: $color-blue;
+		border-radius: 50%;
+		position: relative;
+	}
+
+	&__item::after{
+		content: '';
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		background-image: url(#{$path-img}/sprite.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		@include top-center;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+
+	&__item:not(:last-child){
+		margin-right: 5px;
+	}
+
+	&__item_wu{background: #4ca321;}
+	&__item_vb{background: #7c4f9e;}
+
+	&__item_wu::after{background-position: -40px -210px;}
+	&__item_vb::after{background-position: -5px -210px;}
+}
+
+.info{
+	display: flex;
+	justify-content: space-between;
+
+	&__icon{
+		width: 18px;
+	}
+
+	&__text{
+		width: calc(100% - 28px);
+	}
+}
+
+.info-time{
+	@include font(normal, normal, 14px, 1.7, #fff);
+
+	&__title,
+	&__label{
+		color: $color-grey;
+	}
+}

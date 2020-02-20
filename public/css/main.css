@@ -393,6 +393,137 @@ input[type="submit"].btn_border:hover {
   background: linear-gradient(to bottom, #404552 0%, #2c2f38 100%);
 }
 
+.header-middle {
+  background: #2c2f38;
+  color: #fff;
+  padding: 27px 0;
+}
+
+.info-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-contact__text,
+.info-contact__text a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.info-contact__text {
+  width: 145px;
+  margin-left: 10px;
+}
+
+.info-contact__icon {
+  max-width: calc(100% - 155px);
+  text-align: right;
+}
+
+.info-contact__text a {
+  display: inline-block;
+}
+
+.info-contact__text a:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.info-contact__text a:hover {
+  color: #ff9a24;
+}
+
+.info-msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.info-msg__item {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: #404552;
+  border-radius: 50%;
+  position: relative;
+}
+
+.info-msg__item::after {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.info-msg__item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.info-msg__item_wu {
+  background: #4ca321;
+}
+
+.info-msg__item_vb {
+  background: #7c4f9e;
+}
+
+.info-msg__item_wu::after {
+  background-position: -40px -210px;
+}
+
+.info-msg__item_vb::after {
+  background-position: -5px -210px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info__icon {
+  width: 18px;
+}
+
+.info__text {
+  width: calc(100% - 28px);
+}
+
+.info-time {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #fff;
+}
+
+.info-time__title, .info-time__label {
+  color: #c0c3cc;
+}
+
 /*-------------- Footer -----------------*/
 /*-------------- top-menu -----------------*/
 .top-menu__list, .top-menu__item {
