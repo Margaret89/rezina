@@ -1,0 +1,41 @@
+/*-------------- search-form -----------------*/
+.search-form{
+	width: 470px;
+	position: relative;
+
+	input[type="text"]{
+		height: 46px;
+		width: 100%;
+		padding: 0 50px 0 20px;
+		@include font(normal, normal, 14px, 44px, $color-text);
+		letter-spacing: 0.2px;
+		border: 1px solid #dbdbdb;
+		border-radius: 4px;
+		outline: none;
+	}
+
+	input[type="text"]::placeholder{
+		color: #757575;
+	}
+
+	input[type="submit"]{
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		@include top-center;
+		right: 20px;
+		background: transparent url(#{$path-img}/sprite.png) no-repeat -5px -235px;
+		border: 0;
+		outline: 0;
+		font-size: 0;
+		cursor: pointer;
+	}
+
+	input[type="submit"]:hover{
+		background-position: -40px -235px;
+	}
+
+	input[type="text"]:focus{
+		border-color:$color-orange;
+	}
+}

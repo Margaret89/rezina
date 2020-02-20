@@ -150,3 +150,83 @@
 		color: $color-grey;
 	}
 }
+
+.header-bottom{
+	background: $color-blue;
+}
+
+.category-tab{
+	&__top-wrap{
+		background: #fff;
+	}
+
+	&__top{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__list,
+	&__item{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__list{
+		display: flex;
+	}
+
+	&__item{
+		display: inline-flex;
+		align-items: center;
+		padding: 17px 36px;
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+	}
+
+	&__icon{
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	&__title{
+		max-width: calc(100% - 40px);
+		@include font(normal, 900, 18px, 1.2, #000);
+		text-transform: uppercase;
+	}
+
+
+	&__item-text{
+		@include font(normal, normal, 16px, 1.2, $color-text);
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__item.active,
+	&__item:hover{
+		background: $color-blue;
+		color: #fff;
+	}
+
+	&__item.active &__title,
+	&__item:hover &__title{
+		color: #fff;
+	}
+
+	&__content-item{
+		display: none;
+		padding: 30px 0;
+	}
+
+	&__content-item.active{
+		// display: flex !important;
+		// align-items: center;
+		// justify-content: center;
+	}
+}

@@ -7,6 +7,7 @@
 		<title>Типографика</title>
 		<link rel="stylesheet" href="css/bootstrap-reboot.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.css">
+		<link rel="stylesheet" href="js/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 
@@ -151,97 +152,116 @@
 			
 				<div class="header-bottom">
 					<div class="category-tab js-tabs-page">
-						<div class="category-tab__top">
-							<ul class="category-tab__list js-tabs-page-list">
-								<li class="category-tab__item js-tabs-page-item" data-item="cat-tab1">
-									<div class="category-tab__icon" style="background-image: url(img/ic-tire.png);"></div>
-									<div class="category-tab__title">Шины</div>
-								</li>
-								<li class="category-tab__item js-tabs-page-item" data-item="cat-tab2">\
-									<div class="category-tab__icon" style="background-image: url(img/ic-autodesk.png);"></div>
-									<div class="category-tab__title">Диски</div>
-								</li>
-							</ul>
+						<div class="category-tab__top-wrap">
+							<div class="container">
+								<div class="row">
+									<div class="col-12">
+										<div class="category-tab__top">
+											<ul class="category-tab__list js-tabs-page-list">
+												<li class="category-tab__item js-tabs-page-item" data-item="cat-tab1">
+													<div class="category-tab__icon" style="background-image: url(img/ic-tire.png);"></div>
+													<div class="category-tab__title">Шины</div>
+												</li>
+												<li class="category-tab__item js-tabs-page-item" data-item="cat-tab2">
+													<div class="category-tab__icon" style="background-image: url(img/ic-autodesk.png);"></div>
+													<div class="category-tab__title">Диски</div>
+												</li>
+											</ul>
 			
-							<form class="search-form">
-								<input type="text" name="search" placeholder="Поиск по сайту">
-								<input type="submit" value="Поиск">
-							</form>
+											<form class="search-form">
+												<input type="text" name="search" placeholder="Поиск по сайту">
+												<input type="submit" value="Поиск">
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 			
 						<div class="category-tab__content js-tabs-page-content">
 							<div id="cat-tab1" class="category-tab__content-item js-tabs-page-content-item js-tabs-page-content-item">
-								<div class="filter-tab js-tabs-page">
-									<ul class="filter-tab__list js-tabs-page-list">
-										<li class="filter-tab__item js-tabs-page-item" data-item="filter-tab1">Tab1</li>
-										<li class="filter-tab__item js-tabs-page-item" data-item="filter-tab2">Tab2</li>
-									</ul>
+								<div class="container">
+									<div class="row">
+										<div class="col-12">
+											<div class="filter-tab js-tabs-page">
+												<ul class="filter-tab__list js-tabs-page-list">
+													<li class="filter-tab__item js-tabs-page-item" data-item="filter-tab1">По параметрам</li>
+													<li class="filter-tab__item js-tabs-page-item" data-item="filter-tab2">По марке авто</li>
+												</ul>
 			
-									<div class="filter-tab__content js-tabs-page-content">
-										<div id="filter-tab1" class="filter-tab__content-item js-tabs-page-content-item js-tabs-page-content-item">
-											<form class="form-filter">
-												<div class="filter">
-													<div class="filter__item">
-														<label class="filter__label" for="all">Сезонность</label>
-														<select id="all" class="select-site js-select">
-															<option value="winter">Зима</option>
-															<option value="summer">Лето</option>
-														</select>
+												<div class="filter-tab__content js-tabs-page-content">
+													<div id="filter-tab1" class="filter-tab__content-item js-tabs-page-content-item js-tabs-page-content-item">
+														<form class="form-filter">
+															<div class="row">
+																<div class="col-8">
+																	<div class="filter">
+																		<div class="filter__item">
+																			<label class="filter__label" for="all">Сезонность</label>
+																			<select id="all" class="select-site js-select">
+																				<option value="winter">Зима</option>
+																				<option value="summer">Лето</option>
+																			</select>
+																		</div>
+			
+																		<div class="filter__item">
+																			<label class="filter__label" for="width">Ширина</label>
+																			<select id="width" class="select-site js-select">
+																				<option value="265">265</option>
+																				<option value="300">300</option>
+																				<option value="350">350</option>
+																				<option value="400">400</option>
+																				<option value="450">450</option>
+																			</select>
+																		</div>
+			
+																		<div class="filter__item">
+																			<label class="filter__label" for="front">Профиль</label>
+																			<select id="front" class="select-site js-select">
+																				<option value="65">65</option>
+																				<option value="70">70</option>
+																				<option value="85">85</option>
+																			</select>
+																		</div>
+			
+																		<div class="filter__item">
+																			<label class="filter__label" for="diameter">Диаметр</label>
+																			<select id="diameter" class="select-site js-select">
+																				<option value="17">R: 17</option>
+																				<option value="20">R: 20</option>
+																				<option value="25">R: 25</option>
+																			</select>
+																		</div>
+			
+																		<div class="filter__item filter__item_long">
+																			<label class="filter__label" for="maker">Производитель шин</label>
+																			<select id="maker" class="select-site js-select" data-placeholder="Выбрать">
+																				<option></option>
+																				<option value="Amtel">Amtel</option>
+																				<option value="Barum">Barum</option>
+																			</select>
+			
+																			<div class="input-check input-check_white">
+																				<input type="checkbox" id="checkbox1" checked="checked">
+																				<label for="checkbox1" class="input-check__label"><span class="input-check__mark"></span>RunFlat</label>
+																			</div>
+																		</div>
+			
+																		<div class="filter__btn">
+																			<input type="submit" class="btn btn_border btn_white" value="Показать">
+			
+																			<a href="#" class="filter__reset">Сбросить настройки</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															
+														</form>
 													</div>
-			
-													<div class="filter__item">
-														<label class="filter__label" for="width">Ширина</label>
-														<select id="width" class="select-site js-select">
-															<option value="265">265</option>
-															<option value="300">300</option>
-															<option value="350">350</option>
-															<option value="400">400</option>
-															<option value="450">450</option>
-														</select>
-													</div>
-			
-													<div class="filter__item">
-														<label class="filter__label" for="front">Профиль</label>
-														<select id="front" class="select-site js-select">
-															<option value="65">65</option>
-															<option value="70">70</option>
-															<option value="85">85</option>
-														</select>
-													</div>
-			
-													<div class="filter__item">
-														<label class="filter__label" for="diameter">Диаметр</label>
-														<select id="diameter" class="select-site js-select">
-															<option value="17">R: 17</option>
-															<option value="20">R: 20</option>
-															<option value="25">R: 25</option>
-														</select>
-													</div>
-			
-													<div class="filter__item filter__item_long">
-														<label class="filter__label" for="maker">Производитель шин</label>
-														<select id="maker" class="select-site js-select" data-placeholder="Выбрать">
-															<option></option>
-															<option value="Amtel">Amtel</option>
-															<option value="Barum">Barum</option>
-														</select>
-			
-														<div class="input-check input-check_white">
-															<input type="checkbox" id="checkbox1" checked="checked">
-															<label for="checkbox1" class="input-check__label"><span class="input-check__mark"></span>RunFlat</label>
-														</div>
-													</div>
-			
-													<div class="filter__btn">
-														<input type="submit" class="btn btn_border btn_white" value="Показать">
-			
-														<a href="#" class="filter__reset">Сбросить настройки</a>
+													<div id="filter-tab2" class="filter-tab__content-item js-tabs-page-content-item js-tabs-page-content-item">
+														 Фильтр по марке авто
 													</div>
 												</div>
-											</form>
-										</div>
-										<div id="filter-tab2" class="filter-tab__content-item js-tabs-page-content-item js-tabs-page-content-item">
-											 Фильтр по марке авто
+											</div><!-- end filter-tab -->
 										</div>
 									</div>
 								</div>
@@ -341,9 +361,20 @@
 							</div>
 
 							<div class="input-check input-check_white">
-												<input type="checkbox" id="checkbox1" checked="checked">
-												<label for="checkbox1" class="input-check__label"><span class="input-check__mark"></span>label</label>
-											</div>
+								<input type="checkbox" id="checkbox1" checked="checked">
+								<label for="checkbox1" class="input-check__label"><span class="input-check__mark"></span>label</label>
+							</div>
+
+							<br>
+							<br>
+							<br>
+							<div class="h2">Нестандартный выпадающий список</div>
+							<select id="maker" class="select-site js-select" data-placeholder="Выбрать">
+								<option></option>
+								<option value="Amtel">Amtel</option>
+								<option value="Barum">Barum</option>
+							</select>
+
 						</div>
 					</div>
 				</div>
@@ -360,6 +391,7 @@
 		</div>
 
 		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/vendor/select2/select2.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
