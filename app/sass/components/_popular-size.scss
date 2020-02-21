@@ -1,0 +1,60 @@
+/*-------------- popular-size -----------------*/
+.popular-size-wrap{
+	margin-top: 75px;
+
+	h1,
+	.h1{
+		margin-bottom: 46px;
+	}
+}
+
+.popular-size{
+	display: flex;
+
+	&__head{
+		display: inline-block;
+		min-width: 117px;
+		min-height: 36px;
+		@include font(normal, bold, 16px, 34px, #fff);
+		background: $color-dark-blue;
+		padding: 0 12px;
+		position: relative;
+		margin-bottom: 17px;
+	}
+
+	&__param:nth-child(even) &__head{
+		background: $color-light-blue;
+	}
+
+	&__head::after{
+		content: '';
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 10px 10px;
+		border-color: transparent transparent #f5f5f5 transparent;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+
+	&__item{
+		display: inline-block;
+		width: calc(100% - 30px);
+		@include font(normal, normal, 14px, 25px, #757575);
+		text-decoration: none;
+	}
+
+	&__item:hover,
+	&__item.active{
+		background: $color-orange;
+		color: #fff;
+		font-weight: bold;
+		padding: 0 5px;
+	}
+
+	&__item:not(:last-child){
+		margin-bottom: 7px;
+	}
+}
