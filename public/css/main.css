@@ -1418,3 +1418,137 @@ input[type=checkbox]:checked + .input-check__label .input-check__mark::after {
 .popular-size__item:not(:last-child) {
   margin-bottom: 7px;
 }
+
+/*-------------- slider-post -----------------*/
+.slider-post-wrap {
+  margin-top: 70px;
+  position: relative;
+}
+
+.slider-post-wrap::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: calc(50% + 22px);
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.slider-post {
+  position: relative;
+  padding-bottom: 42px;
+}
+
+.slider-post__item {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.slider-post__content {
+  width: calc(66.66% - 30px);
+  padding: 38px 30px 38px 80px;
+  position: relative;
+}
+
+.slider-post__content::before {
+  content: '';
+  display: inline-block;
+  width: calc(100% + 40px);
+  height: 100%;
+  background: #404552;
+  opacity: 0.86;
+  -webkit-transform: skew(-17deg);
+      -ms-transform: skew(-17deg);
+          transform: skew(-17deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider-post__content::after {
+  content: '';
+  display: inline-block;
+  width: 340px;
+  height: 160px;
+  background: url(../img/bg-content-slider-post.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.slider-post__title {
+  max-width: 470px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.slider-post__main {
+  font-weight: bold;
+  color: #ff9a24;
+}
+
+.slider-post .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.slider-post .slick-dots li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.slider-post .slick-dots li:not(:last-child) {
+  margin-right: 9px;
+}
+
+.slider-post .slick-dots button {
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #dbdbdb;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  border: 0;
+  outline: 0;
+  -webkit-transition: background 0.3s ease 0s;
+  -o-transition: background 0.3s ease 0s;
+  transition: background 0.3s ease 0s;
+}
+
+.slider-post .slick-dots .slick-active button,
+.slider-post .slick-dots button:hover {
+  background: #ff9a24;
+}

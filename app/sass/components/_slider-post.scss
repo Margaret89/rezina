@@ -1,0 +1,115 @@
+/*-------------- slider-post -----------------*/
+.slider-post-wrap{
+	margin-top: 70px;
+	position: relative;
+
+	&::before{
+		content: '';
+		display: block;
+		width: 100%;
+		height: calc(50% + 22px);
+		background: #fff;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+}
+
+.slider-post{
+	position: relative;
+	padding-bottom: 42px;
+
+	&__item{
+		display: flex!important;
+		justify-content: flex-end;
+		background-repeat: no-repeat;
+		background-position: center;
+		overflow: hidden;
+	}
+
+	&__content{
+		width: calc(66.66% - 30px);
+		padding: 38px 30px 38px 80px;
+		position: relative;
+	}
+
+	&__content::before{
+		content: '';
+		display: inline-block;
+		width: calc(100% + 40px);
+		height: 100%;
+		background: $color-blue;
+		opacity: 0.86;
+		transform: skew(-17deg);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&__content::after{
+		content: '';
+		display: inline-block;
+		width: 340px;
+		height: 160px;
+		background: url(#{$path-img}/bg-content-slider-post.png) no-repeat center;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&__title{
+		max-width: 470px;
+		@include font(normal, 300, 36px, 1.2, #fff);
+		text-transform: uppercase;
+		position: relative;
+	}
+
+	&__main{
+		font-weight: bold;
+		color: $color-orange;
+	}
+
+	.slick-dots{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+
+		li{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+
+		li:not(:last-child){
+			margin-right: 9px;
+		}
+
+		button{
+			display: inline-block;
+			vertical-align: middle;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: #dbdbdb;
+			padding: 0;
+			margin: 0;
+			font-size: 0;
+			border: 0;
+			outline: 0;
+			transition: background 0.3s ease 0s;
+		}
+
+		.slick-active button,
+		button:hover{
+			background: $color-orange;
+		}
+	}
+}

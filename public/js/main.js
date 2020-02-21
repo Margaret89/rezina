@@ -46,4 +46,11 @@ $(document).ready(function () {
 	});
 	
 	$('.js-move-up').click(function(){$('body,html').animate({scrollTop:0},800);return false;});
+
+// Слайдер лозунгов
+	$('.js-slider-post').slick({
+		arrows: false,
+		dots: true,
+	});
+
 });
