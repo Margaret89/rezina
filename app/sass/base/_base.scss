@@ -160,6 +160,20 @@ input[type="submit"].btn_border:hover{
 	color: #fff;
 }
 
+.btn_border.btn_white,
+input[type="submit"].btn_border.btn_white{
+	border: 1px solid $color-light-blue;
+	background: transparent;
+	font-weight: normal;
+	color: #fff;
+}
+
+.btn_border.btn_white:hover,
+input[type="submit"].btn_border.btn_white:hover{
+	border-color: $color-light-blue;
+	box-shadow: $color-light-blue 0 0px 0px 40px inset;
+}
+
 .code{
 	background-color: #f7f7f7;
 	border: 1px solid #e1e1e8;

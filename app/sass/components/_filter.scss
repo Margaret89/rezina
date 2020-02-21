@@ -2,6 +2,13 @@
 .filter-tab{
 	position: relative;
 
+	ul,
+	li{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
 	&__list{
 		display: flex;
 	}
@@ -37,11 +44,19 @@
 		content: '';
 		display: inline-block;
 		width: 565px;
-		height: 100%;
+		height: calc(100% + 65px);
 		background: url(#{$path-img}/bg-filter.png) no-repeat center bottom;
 		position: absolute;
-		bottom: -30px;
-		right: -100px;
+		bottom: -35px;
+		right: -193px;
+	}
+
+	&__content{
+		margin-top: 23px;
+	}
+
+	&__content-item{
+		display: none;
 	}
 }
 
@@ -50,13 +65,62 @@
 	flex-wrap: wrap;
 	margin-left: -15px;
 	margin-right: -15px;
+	position: relative;
+	z-index: 1;
 
 	&__item{
 		width: calc(25% - 30px);
-		margin: 0 15px 15px;
+		margin: 0 15px 20px;
 	}
 
-	&__item_long{
+	&__item_long,
+	&__btn{
 		width: calc(50% - 30px);
+	}
+
+	&__label{
+		@include font(normal, bold, 12px, 1.2, $color-grey);
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+
+	&__btn .btn,
+	&__btn input[type="submit"].btn{
+		width: 100%;
+		margin: 33px 15px 0;
+		font-size: 16px;
+	}
+
+	&__reset{
+		display: inline-block;
+		@include font(normal, normal, 14px, 1.2, $color-grey);
+		text-decoration: none;
+		padding-left: 20px;
+		position: relative;
+		margin: 16px 15px 0;
+		transition: all 0.3s ease 0s;
+	}
+
+	&__reset::before{
+		content: '';
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+		background: url(#{$path-img}/sprite.png) no-repeat -5px -280px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&__reset:hover{
+		color: $color-orange;
+	}
+
+	&__reset:hover::before{
+		background-position: -40px -280px;
+	}
+
+	.input-check{
+		margin-top: 16px;
 	}
 }

@@ -183,21 +183,22 @@
 								<div class="container">
 									<div class="row">
 										<div class="col-12">
-											<div class="filter-tab js-tabs-page">
-												<ul class="filter-tab__list js-tabs-page-list">
-													<li class="filter-tab__item js-tabs-page-item" data-item="filter-tab1">По параметрам</li>
-													<li class="filter-tab__item js-tabs-page-item" data-item="filter-tab2">По марке авто</li>
+											<div class="filter-tab js-tabs-inner">
+												<ul class="filter-tab__list js-tabs-inner-list">
+													<li class="filter-tab__item js-tabs-inner-item" data-item="filter-tab1">По параметрам</li>
+													<li class="filter-tab__item js-tabs-inner-item" data-item="filter-tab2">По марке авто</li>
 												</ul>
 			
-												<div class="filter-tab__content js-tabs-page-content">
-													<div id="filter-tab1" class="filter-tab__content-item js-tabs-page-content-item js-tabs-page-content-item">
+												<div class="filter-tab__content js-tabs-inner-content">
+													<div id="filter-tab1" class="filter-tab__content-item js-tabs-inner-content-item js-tabs-inner-content-item">
 														<form class="form-filter">
 															<div class="row">
 																<div class="col-8">
 																	<div class="filter">
 																		<div class="filter__item">
-																			<label class="filter__label" for="all">Сезонность</label>
-																			<select id="all" class="select-site js-select">
+																			<label class="filter__label" for="season">Сезонность</label>
+																			<select id="season" class="select-site js-select">
+																				<option value="all">Все</option>
 																				<option value="winter">Зима</option>
 																				<option value="summer">Лето</option>
 																			</select>
@@ -241,8 +242,8 @@
 																			</select>
 			
 																			<div class="input-check input-check_white">
-																				<input type="checkbox" id="checkbox1" checked="checked">
-																				<label for="checkbox1" class="input-check__label"><span class="input-check__mark"></span>RunFlat</label>
+																				<input type="checkbox" id="checkbox1">
+																				<label for="checkbox1" class="input-check__label"><span class="input-check__mark"></span><span class="input-check__text">RunFlat</span></label>
 																			</div>
 																		</div>
 			
@@ -257,7 +258,7 @@
 															
 														</form>
 													</div>
-													<div id="filter-tab2" class="filter-tab__content-item js-tabs-page-content-item js-tabs-page-content-item">
+													<div id="filter-tab2" class="filter-tab__content-item js-tabs-inner-content-item js-tabs-inner-content-item">
 														 Фильтр по марке авто
 													</div>
 												</div>
@@ -268,7 +269,13 @@
 							</div>
 			
 							<div id="cat-tab2" class="category-tab__content-item js-tabs-page-content-item js-tabs-page-content-item">
-								Фильтр для дисков
+								<div class="container">
+									<div class="row">
+										<div class="col-12">
+											Фильтр для дисков
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -346,7 +353,7 @@
 
 							<br>
 							<br>
-							<div style="background: #404552">
+							<div style="background: #404552; padding: 15px;">
 								<a href="#" class="btn btn_border btn_white">Кнопка</a>
 							</div>
 							
@@ -356,14 +363,19 @@
 							<br>
 							<div class="h2">Нестандартный checkbox</div>
 							<div class="input-check">
-								<input type="checkbox" id="checkbox1" checked="checked">
-								<label for="checkbox1" class="input-check__label"><span class="input-check__mark"></span>label</label>
+								<input type="checkbox" id="checkbox2">
+								<label for="checkbox2" class="input-check__label"><span class="input-check__mark"></span><span class="input-check__text">label</span></label>
 							</div>
 
-							<div class="input-check input-check_white">
-								<input type="checkbox" id="checkbox1" checked="checked">
-								<label for="checkbox1" class="input-check__label"><span class="input-check__mark"></span>label</label>
+							<br>
+							<div style="background: #404552; padding: 15px;">
+								<div class="input-check input-check_white">
+									<input type="checkbox" id="checkbox3">
+									<label for="checkbox3" class="input-check__label"><span class="input-check__mark"></span><span class="input-check__text">label</span></label>
+								</div>
 							</div>
+
+							
 
 							<br>
 							<br>

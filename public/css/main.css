@@ -1,64 +1,64 @@
 /*-------------- fonts -----------------*/
 @font-face {
   font-family: 'Avenir Next Cyr';
-  src: url("AvenirNextCyr-BoldItalic.eot");
-  src: local("Avenir Next Cyr Bold Italic"), local("AvenirNextCyr-BoldItalic"), url("AvenirNextCyr-BoldItalic.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-BoldItalic.woff") format("woff"), url("AvenirNextCyr-BoldItalic.ttf") format("truetype");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-BoldItalic.eot");
+  src: local("Avenir Next Cyr Bold Italic"), local("AvenirNextCyr-BoldItalic"), url("../fonts/AvenirNextCyr/AvenirNextCyr-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-BoldItalic.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Avenir Next Cyr';
-  src: url("AvenirNextCyr-Light.eot");
-  src: local("Avenir Next Cyr Light"), local("AvenirNextCyr-Light"), url("AvenirNextCyr-Light.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Light.woff") format("woff"), url("AvenirNextCyr-Light.ttf") format("truetype");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.eot");
+  src: local("Avenir Next Cyr Light"), local("AvenirNextCyr-Light"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Avenir Next Cyr';
-  src: url("AvenirNextCyr-Italic.eot");
-  src: local("Avenir Next Cyr Italic"), local("AvenirNextCyr-Italic"), url("AvenirNextCyr-Italic.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Italic.woff") format("woff"), url("AvenirNextCyr-Italic.ttf") format("truetype");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Italic.eot");
+  src: local("Avenir Next Cyr Italic"), local("AvenirNextCyr-Italic"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Italic.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Avenir Next Cyr';
-  src: url("AvenirNextCyr-HeavyItalic.eot");
-  src: local("Avenir Next Cyr Heavy Italic"), local("AvenirNextCyr-HeavyItalic"), url("AvenirNextCyr-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-HeavyItalic.woff") format("woff"), url("AvenirNextCyr-HeavyItalic.ttf") format("truetype");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-HeavyItalic.eot");
+  src: local("Avenir Next Cyr Heavy Italic"), local("AvenirNextCyr-HeavyItalic"), url("../fonts/AvenirNextCyr/AvenirNextCyr-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-HeavyItalic.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-HeavyItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Avenir Next Cyr';
-  src: url("AvenirNextCyr-LightItalic.eot");
-  src: local("Avenir Next Cyr Light Italic"), local("AvenirNextCyr-LightItalic"), url("AvenirNextCyr-LightItalic.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-LightItalic.woff") format("woff"), url("AvenirNextCyr-LightItalic.ttf") format("truetype");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.eot");
+  src: local("Avenir Next Cyr Light Italic"), local("AvenirNextCyr-LightItalic"), url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Avenir Next Cyr';
-  src: url("AvenirNextCyr-Regular.eot");
-  src: local("Avenir Next Cyr Regular"), local("AvenirNextCyr-Regular"), url("AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Regular.woff") format("woff"), url("AvenirNextCyr-Regular.ttf") format("truetype");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot");
+  src: local("Avenir Next Cyr Regular"), local("AvenirNextCyr-Regular"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Avenir Next Cyr';
-  src: url("AvenirNextCyr-Heavy.eot");
-  src: local("Avenir Next Cyr Heavy"), local("AvenirNextCyr-Heavy"), url("AvenirNextCyr-Heavy.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Heavy.woff") format("woff"), url("AvenirNextCyr-Heavy.ttf") format("truetype");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.eot");
+  src: local("Avenir Next Cyr Heavy"), local("AvenirNextCyr-Heavy"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Avenir Next Cyr';
-  src: url("AvenirNextCyr-Bold.eot");
-  src: local("Avenir Next Cyr Bold"), local("AvenirNextCyr-Bold"), url("AvenirNextCyr-Bold.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Bold.woff") format("woff"), url("AvenirNextCyr-Bold.ttf") format("truetype");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot");
+  src: local("Avenir Next Cyr Bold"), local("AvenirNextCyr-Bold"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -273,6 +273,21 @@ input[type="submit"].btn_border:hover {
           box-shadow: #ff9a24 0 0px 0px 40px inset;
   border-color: #ff9a24;
   color: #fff;
+}
+
+.btn_border.btn_white,
+input[type="submit"].btn_border.btn_white {
+  border: 1px solid #545b6b;
+  background: transparent;
+  font-weight: normal;
+  color: #fff;
+}
+
+.btn_border.btn_white:hover,
+input[type="submit"].btn_border.btn_white:hover {
+  border-color: #545b6b;
+  -webkit-box-shadow: #545b6b 0 0px 0px 40px inset;
+          box-shadow: #545b6b 0 0px 0px 40px inset;
 }
 
 .code {
@@ -563,7 +578,7 @@ input[type="submit"].btn_border:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 17px 36px;
+  padding: 16px 33px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -612,7 +627,8 @@ input[type="submit"].btn_border:hover {
 
 .category-tab__content-item {
   display: none;
-  padding: 30px 0;
+  padding: 30px 0 35px;
+  color: #fff;
 }
 
 /*-------------- Footer -----------------*/
@@ -813,7 +829,7 @@ input[type="submit"].btn_border:hover {
 .search-form input[type="text"] {
   height: 46px;
   width: 100%;
-  padding: 0 50px 0 20px;
+  padding: 0 40px 0 18px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -853,7 +869,7 @@ input[type="submit"].btn_border:hover {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: 20px;
+  right: 15px;
   background: transparent url(../img/sprite.png) no-repeat -5px -235px;
   border: 0;
   outline: 0;
@@ -872,6 +888,13 @@ input[type="submit"].btn_border:hover {
 /*-------------- filter -----------------*/
 .filter-tab {
   position: relative;
+}
+
+.filter-tab ul,
+.filter-tab li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .filter-tab__list {
@@ -920,11 +943,19 @@ input[type="submit"].btn_border:hover {
   content: '';
   display: inline-block;
   width: 565px;
-  height: 100%;
+  height: calc(100% + 65px);
   background: url(../img/bg-filter.png) no-repeat center bottom;
   position: absolute;
-  bottom: -30px;
-  right: -100px;
+  bottom: -35px;
+  right: -193px;
+}
+
+.filter-tab__content {
+  margin-top: 23px;
+}
+
+.filter-tab__content-item {
+  display: none;
 }
 
 .filter {
@@ -935,15 +966,73 @@ input[type="submit"].btn_border:hover {
       flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
+  position: relative;
+  z-index: 1;
 }
 
 .filter__item {
   width: calc(25% - 30px);
-  margin: 0 15px 15px;
+  margin: 0 15px 20px;
 }
 
-.filter__item_long {
+.filter__item_long, .filter__btn {
   width: calc(50% - 30px);
+}
+
+.filter__label {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #c0c3cc;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.filter__btn .btn,
+.filter__btn input[type="submit"].btn {
+  width: 100%;
+  margin: 33px 15px 0;
+  font-size: 16px;
+}
+
+.filter__reset {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #c0c3cc;
+  text-decoration: none;
+  padding-left: 20px;
+  position: relative;
+  margin: 16px 15px 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.filter__reset::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(../img/sprite.png) no-repeat -5px -280px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.filter__reset:hover {
+  color: #ff9a24;
+}
+
+.filter__reset:hover::before {
+  background-position: -40px -280px;
+}
+
+.filter .input-check {
+  margin-top: 16px;
 }
 
 /*-------------- select -----------------*/
@@ -973,17 +1062,18 @@ input[type="submit"].btn_border:hover {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
+  height: 50px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 48px;
   color: #000;
-  padding: 0 50px 0 12px;
+  padding: 0 50px 0 20px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   display: inline-block;
-  width: 38px;
+  width: 50px;
   height: 100%;
   background: transparent;
   top: 0;
@@ -1053,4 +1143,72 @@ input[type="submit"].btn_border:hover {
     font-size: 20px;
     line-height: 52px;
   }
+}
+
+/*-------------- input-check -----------------*/
+.input-check__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #000;
+  margin: 0;
+}
+
+.input-check input[type=checkbox] {
+  display: none;
+}
+
+.input-check__mark {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ff9a24;
+  background: transparent;
+  position: relative;
+}
+
+.input-check__mark::after {
+  content: '';
+  display: none;
+  width: 12px;
+  height: 10px;
+  background: url(../img/sprite.png) no-repeat -40px -305px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.input-check__text {
+  max-width: calc(100% - 26px);
+  margin-left: 10px;
+}
+
+input[type=checkbox]:checked + .input-check__label .input-check__mark::after {
+  display: inline-block;
+}
+
+.input-check_white .input-check__mark {
+  border-color: #7d7f85;
+}
+
+.input-check_white .input-check__label {
+  color: #fff;
+}
+
+.input-check_white .input-check__mark::after {
+  background-position: -5px -305px;
 }

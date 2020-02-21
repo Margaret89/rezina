@@ -20,13 +20,14 @@
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered{
+	height: 50px;
 	@include font(normal, normal, 14px, 48px, #000);
-	padding: 0 50px 0 12px;
+	padding: 0 50px 0 20px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow{
 	display: inline-block;
-	width: 38px;
+	width: 50px;
 	height: 100%;
 	background: transparent;
 	top: 0;

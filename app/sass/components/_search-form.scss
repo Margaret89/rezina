@@ -6,7 +6,7 @@
 	input[type="text"]{
 		height: 46px;
 		width: 100%;
-		padding: 0 50px 0 20px;
+		padding: 0 40px 0 18px;
 		@include font(normal, normal, 14px, 44px, $color-text);
 		letter-spacing: 0.2px;
 		border: 1px solid #dbdbdb;
@@ -23,7 +23,7 @@
 		height: 16px;
 		position: absolute;
 		@include top-center;
-		right: 20px;
+		right: 15px;
 		background: transparent url(#{$path-img}/sprite.png) no-repeat -5px -235px;
 		border: 0;
 		outline: 0;

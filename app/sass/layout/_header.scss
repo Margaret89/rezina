@@ -180,7 +180,7 @@
 	&__item{
 		display: inline-flex;
 		align-items: center;
-		padding: 17px 36px;
+		padding: 16px 33px;
 		cursor: pointer;
 		transition: all 0.3s ease 0s;
 	}
@@ -221,7 +221,8 @@
 
 	&__content-item{
 		display: none;
-		padding: 30px 0;
+		padding: 30px 0 35px;
+		color: #fff;
 	}
 
 	&__content-item.active{
