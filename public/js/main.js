@@ -27,13 +27,23 @@ $(document).ready(function () {
 	}
 
 // Стилизация выпадающего списка
-if ($('.js-select').length) {
-	$('.js-select').select2({
-		minimumResultsForSearch: Infinity,
-		 placeholder: function(){
-			$(this).attr('data-placeholder');
-		},
-	});
-}
+	if ($('.js-select').length) {
+		$('.js-select').select2({
+			minimumResultsForSearch: Infinity,
+			 placeholder: function(){
+				$(this).attr('data-placeholder');
+			},
+		});
+	}
 
+// Стрелка вверх
+	$(window).scroll(function(){
+		if($(this).scrollTop()>300){
+			$('.js-move-up').addClass('visible');
+		}else{
+			$('.js-move-up').removeClass('visible');
+		}
+	});
+	
+	$('.js-move-up').click(function(){$('body,html').animate({scrollTop:0},800);return false;});
 });

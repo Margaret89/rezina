@@ -1,0 +1,35 @@
+/*-------------- move-up -----------------*/
+.move-up{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #a3a5ad;
+	position: fixed;
+	bottom: 50px;
+	right: 10%;
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+
+	&::after{
+		content: '';
+		display: inline-block;
+		width: 24px;
+		height: 16px;
+		background: url(#{$path-img}/sprite.png) no-repeat -5px -325px;
+		position: absolute;
+		@include top-center;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+
+	&.visible{
+		opacity: 1;
+	}
+
+	&:hover{
+		box-shadow: #ec8a18 0 0px 0px 40px inset;
+	}
+}

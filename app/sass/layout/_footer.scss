@@ -1,1 +1,72 @@
 /*-------------- Footer -----------------*/
+.footer{
+	background: $color-dark-blue;
+	overflow: hidden;
+	color: #fff;
+	padding: 73px 0 95px;
+
+	&__copyright{
+		display: block;
+		height: 100%;
+		@include font(normal, normal, 14px, 1.7, #fff);
+		position: relative;
+	}
+
+	&__copyright::before{
+		content: '';
+		display: inline-block;
+		width: 405px;
+		height: 192px;
+		background: url(#{$path-img}/bg-footer.png) no-repeat center;
+		position: absolute;
+		right: 22px;
+		bottom: -95px;
+	}
+
+	&__head{
+		@include font(normal, bold, 16px, 1.5, #fff);
+		text-transform: uppercase;
+		margin-bottom: 21px;
+	}
+
+	.info-contact{
+		margin-bottom: 27px;
+	}
+
+	.info-contact__icon,
+	.info-contact__text{
+		width: auto;
+	}
+
+	.info-contact__item:not(:last-child){
+		margin-bottom: 17px;
+	}
+
+	.info:not(:last-child){
+		margin-bottom: 5px;
+	}
+}
+
+.footer-menu{
+	&__list,
+	&__item{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__item,
+	&__item a{
+		@include font(normal, normal, 14px, 1.2, $color-grey);
+		text-decoration: none;
+		transition: all 0.3s ease 0s;
+	}
+
+	&__item:not(:last-child){
+		margin-bottom: 15px;
+	}
+
+	&__item a:hover{
+		color: $color-orange;
+	}
+}

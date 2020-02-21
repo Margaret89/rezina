@@ -55,10 +55,21 @@
 	background: $color-dark-blue;
 	color: #fff;
 	padding: 27px 0;
+
+	.info-contact{
+		margin-top: 3px;
+	}
 }
 
 .info-contact{
-	display: flex;
+	&__item{
+		display: flex;
+		align-items: center;
+	}
+
+	&__item:not(:last-child){
+		margin-bottom: 10px;
+	}
 
 	&__text,
 	&__text a{
@@ -68,12 +79,12 @@
 	}
 
 	&__text{
-		width: 145px;
+		width: calc(100% - 90px);
 		margin-left: 10px;
 	}
 
 	&__icon{
-		max-width: calc(100% - 155px);
+		width: 77px;
 		text-align: right;
 	}
 
@@ -93,7 +104,6 @@
 .info-msg{
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 10px;
 
 	&__item{
 		display: inline-block;
