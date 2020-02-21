@@ -53,4 +53,7 @@ $(document).ready(function () {
 		dots: true,
 	});
 
+// Слайдер предложений
+	$('.js-slider-offer').slick();
+
 });

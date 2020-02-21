@@ -1,0 +1,27 @@
+/*-------------- countdown -----------------*/
+.syotimer{
+	&__body{
+		display: flex;
+	}
+}
+
+.syotimer-cell{
+	min-width: 52px;
+	border: 1px solid #dbdbdb;
+	border-radius: 4px;
+	padding: 13px 5px;
+	position: relative;
+	text-align: center;
+
+	&:not(:last-child){
+		margin-right: 6px;
+	}
+
+	&__value{
+		@include font(normal, bold, 22px, 16px, #000);
+	}
+
+	&__unit{
+		@include font(normal, normal, 12px, 16px, #757575);
+	}
+}

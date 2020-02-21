@@ -1,0 +1,117 @@
+/*-------------- slider-offer -----------------*/
+.slider-offer{
+	background: #fff;
+	border: 6px solid $color-blue;
+	box-shadow: 0px 26px 46px 0px rgba(0,0,0,0.06);
+
+	&__item{
+		display: flex!important;
+		justify-content: space-between;
+		padding: 40px 63px;
+	}
+
+	&__img{
+		width: 320px;
+		height: 320px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		position: relative;
+	}
+
+	&__content{
+		width: calc(100% - 350px);
+	}
+
+	&__sale{
+		display: inline-block;
+		width: 40px;
+		height: 42px;
+		background: url(#{$path-img}/sprite.png) no-repeat -5px -350px;
+		position: absolute;
+		top: -20px;
+		left: -33px;
+	}
+
+	&__tag{
+		display: inline-block;
+		height: 30px;
+		@include font(normal, bold, 14px, 30px, #fff);
+		text-transform: uppercase;
+		padding: 0 10px;
+		background: #ff3a24;
+		box-shadow: 0px 8px 12px 0px rgba(255,58,36,0.12);
+		margin-right: 10px;
+		margin-bottom: 25px;
+		position: relative;
+	}
+
+	&__tag::after{
+		content: '';
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 15px 0 15px 10px;
+		border-color: transparent transparent transparent #ff3a24;
+		position: absolute;
+		top: 0;
+		left: 100%
+	}
+
+	&__name{
+		@include font(normal, bold, 22px, 1.35, #000);
+	}
+
+	&__article{
+		@include font(normal, normal, 16px, 1.35, #999);
+		margin-top: 5px;
+	}
+
+	&__price{
+		@include font(normal, bold, 26px, 1, #000);
+		margin-top: 25px;
+	}
+
+	&__old-price{
+		@include font(normal, normal, 16px, 1, #adadad);
+		text-decoration: line-through;
+		margin-left: 6px;
+	}
+
+	.rating{
+		margin-top: 17px;
+	}
+
+	.btn{
+		min-width: 157px;
+		margin-top: 25px;
+	}
+
+	.countdown-wrap{
+		margin-top: 31px;
+	}
+
+	.slick-arrow{
+		display: inline-block;
+		width: 14px;
+		height: 20px;
+		background-color: transparent;
+		background-image: url(#{$path-img}/sprite.png);
+		background-repeat: no-repeat;
+		border: 0;
+		outline: 0;
+		box-shadow: none;
+		font-size: 0;
+		position: absolute;
+		@include top-center;
+		cursor: pointer;
+		z-index: 1;
+	}
+
+	.slick-prev{background-position: -5px -400px; left: 25px}
+	.slick-next{background-position: -40px -400px; right: 25px}
+
+	.slick-prev:hover{background-position: -5px -430px;}
+	.slick-next:hover{background-position: -40px -430px;}
+}

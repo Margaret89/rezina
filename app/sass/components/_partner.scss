@@ -1,0 +1,25 @@
+/*-------------- partner -----------------*/
+.partner{
+	&__head{
+		@include font(normal, bold, 26px, 1.2, #000);
+		margin-bottom: 20px;
+	}
+
+	&__list{
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+
+	&__item{
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: calc(50% - 10px);
+		min-height: 70px;
+		border: 1px solid #ebebeb;
+		padding: 5px;
+		margin: 5px;
+	}
+}
