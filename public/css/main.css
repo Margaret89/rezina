@@ -1852,6 +1852,7 @@ input[type=checkbox]:checked + .input-check__label .input-check__mark::after {
 /*-------------- new-product -----------------*/
 .new-product {
   margin-top: 75px;
+  margin-bottom: 65px;
 }
 
 .new-product h1,
@@ -2025,4 +2026,151 @@ input[type=checkbox]:checked + .input-check__label .input-check__mark::after {
 
 .catalog-list .btn {
   margin-top: 20px;
+}
+
+/*-------------- season -----------------*/
+.season-wrap {
+  padding-top: 75px;
+}
+
+.season-wrap h1,
+.season-wrap .h1 {
+  margin-bottom: 30px;
+}
+
+.season-list {
+  margin-top: 65px;
+}
+
+.season-list__item {
+  display: block;
+  padding: 0 38px 33px;
+  border: 1px solid #dbdbdb;
+  border-top: 0;
+  position: relative;
+  margin-bottom: 30px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.season-list__item::before, .season-list__item::after {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  background: #dbdbdb;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.season-list__item::before {
+  width: 20px;
+  left: 0;
+}
+
+.season-list__item::after {
+  width: calc(100% - 155px);
+  right: 0;
+}
+
+.season-list__img {
+  display: inline-block;
+  width: 65px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: relative;
+  margin-bottom: -18px;
+}
+
+.season-list__icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -10px;
+  right: -30px;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.season-list__icon img {
+  max-height: 60px;
+}
+
+.season-list__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 8px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.season-list__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #424242;
+}
+
+.season-list__text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.season-list__item:hover {
+  border-color: #ff9a24;
+}
+
+.season-list__item:hover::before, .season-list__item:hover::after {
+  background: #ff9a24;
+}
+
+.season-list__item:hover .season-list__name {
+  color: #ff9a24;
+}
+
+@-webkit-keyframes rotateIcon {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateIcon {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.season-list__item:hover .season-list__icon {
+  -webkit-animation-name: rotateIcon;
+          animation-name: rotateIcon;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
