@@ -1,0 +1,135 @@
+/*-------------- catalog-list -----------------*/
+.catalog-list{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+
+	&__item{
+		display: inline-block;
+		width: calc(25% - 30px);
+		padding: 30px 10px;
+		position: relative;
+		margin: 15px;
+	}
+
+	&__item::before{
+		content: '';
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		box-shadow: 0px 22px 26px 0px rgba(0,0,0,0.04);
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: all 0.2s ease 0s;
+	}
+
+	&__item:hover::before{
+		transform: scale(1.05);
+	}
+
+	&__content{
+		position: relative;
+	}
+
+	&__img{
+		display: block;
+		height: 210px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		position: relative;
+		text-decoration: none;
+		margin-bottom: 20px;
+	}
+
+	&__wish{
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		background: url(#{$path-img}/sprite.png) no-repeat -5px -485px;
+		position: absolute;
+		top: -12px;
+		left: 8px;
+	}
+
+	&__wish.active,
+	&__wish:hover{
+		background-position: -40px -485px;
+	}
+
+	&__sale{
+		display: inline-block;
+		width: 40px;
+		height: 42px;
+		background: url(#{$path-img}/sprite.png) no-repeat -5px -350px;
+		position: absolute;
+		top: -12px;
+		right: 8px;
+	}
+
+	&__info{
+		text-align: center;
+	}
+
+	&__name,
+	&__name a,
+	&__article{
+		@include font(normal, normal, 14px, 1.7, $color-text);
+		text-decoration: none;
+	}
+
+	&__name{
+		transition: all 0.3s ease 0s;
+	}
+
+	&__name a:hover{
+		color: $color-orange;
+	}
+
+	&__price{
+		@include font(normal, bold, 20px, 1.2, #000);
+		margin-top: 16px;
+	}
+
+	&__old-price{
+		@include font(normal, normal, 14px, 1.2, #adadad);
+		text-decoration: line-through;
+		margin-right: 10px;
+	}
+
+	&__compare{
+		margin-top: 10px;
+	}
+
+	&__compare-link{
+		display: inline-block;
+		vertical-align: middle;
+		@include font(normal, normal, 14px, 1, #999);
+		text-decoration: none;
+		position: relative;
+		padding-left: 24px;
+	}
+
+	&__compare-link::before{
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		width: 14px;
+		height: 14px;
+		background: url(#{$path-img}/sprite.png) no-repeat -5px -460px;
+		margin-right: 10px;
+		position: absolute;
+		left: 0;
+		@include top-center;
+	}
+
+	&__compare-link:hover{color: $color-text;}
+	&__compare-link:hover::before{background-position: -40px -460px;}
+
+	.btn{
+		margin-top: 20px;
+	}
+}
