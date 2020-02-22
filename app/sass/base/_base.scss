@@ -72,7 +72,7 @@ h2,
 .h2{
 	@include font(normal, bold, 20px, 1.2, #000);
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	margin-bottom: 17px;
 }
 
 h3,
@@ -120,6 +120,11 @@ p + ol{
 	margin-top: 15px;
 }
 
+p + h2,
+p + .h2{
+	margin-top: 38px;
+}
+
 .wrapper{
 	display: flex;
 	flex-direction: column;
@@ -131,7 +136,11 @@ p + ol{
 
 main{
 	flex: 1;
-	padding-bottom: 100px;
+	padding-bottom: 75px;
+}
+
+.no-indent-last{
+	margin-bottom: -75px;
 }
 
 .btn,
