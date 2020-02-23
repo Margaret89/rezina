@@ -18,7 +18,7 @@
 		display: inline-block;
 		width: 16px;
 		height: 16px;
-		border: 1px solid $color-orange;
+		border: 1px solid #dbdbdb;
 		background: transparent;
 		position: relative;
 	}
@@ -41,9 +41,8 @@
 		margin-left: 10px;
 	}
 
-	input[type=checkbox]:checked + &__label &__mark::after{
-		display: inline-block;
-	}
+	input[type=checkbox]:checked + &__label &__mark{border-color: $color-orange;}
+	input[type=checkbox]:checked + &__label &__mark::after{display: inline-block;}
 
 	&_white &__mark{border-color: #7d7f85;}
 	&_white &__label{color: #fff;}

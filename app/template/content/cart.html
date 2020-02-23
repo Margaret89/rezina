@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+	//= ../header/header-meta.html
+		<title>Корзина</title>
+	//= ../header/header-link.html
+	</head>
+	<body>
+		<div class="wrapper">
+			//= ../header/header-no-active.html
+			<main>
+				<section class="breadcrumb">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<ul class="breadcrumb__list">
+									<li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Главная страница</a></li>
+									<li class="breadcrumb__item">Корзина</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="head-page">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<h1>Корзина</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="cart-wrap">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="cart">
+									<div class="cart__head">
+										<div class="cart__item cart__item_img">Товар:</div>
+										<div class="cart__item cart__item_name">Название:</div>
+										<div class="cart__item cart__item_count">Kол-во:</div>
+										<div class="cart__item cart__item_price">Цена за шт.:</div>
+										<div class="cart__item cart__item_price">Цена</div>
+										<div class="cart__item cart__item_del"></div>
+									</div>
+
+									<div class="cart__row">
+										<div class="cart__item cart__item_img">
+											<a href="#" class="cart__img" style="background-image: url(img/cart.jpg);"></a>
+										</div>
+
+										<div class="cart__item cart__item_name">
+											<a href="#" class="cart__name">Continental SportContact 6 235/35 R19 91Y</a>
+										</div>
+
+										<div class="cart__item cart__item_count">
+											<div class="counter js-counter">
+												<div class="counter__min js-counter-min"></div>
+												<input class="counter__input js-counter-input" type="number" value="1" />
+												<div class="counter__max js-counter-max"></div>
+											</div>
+										</div>
+
+										<div class="cart__item cart__item_price">6 850 руб.</div>
+
+										<div class="cart__item cart__item_price">19 700 руб.</div>
+
+										<div class="cart__item cart__item_del">
+											<a href="#" class="cart__del"></a>
+										</div>
+									</div>
+
+									<div class="cart__row">
+										<div class="cart__item cart__item_img">
+											<a href="#" class="cart__img" style="background-image: url(img/cart.jpg);"></a>
+										</div>
+
+										<div class="cart__item cart__item_name">
+											<a href="#" class="cart__name">Continental SportContact 6 235/35 R19 91Y</a>
+										</div>
+
+										<div class="cart__item cart__item_count">
+											<div class="counter js-counter">
+												<div class="counter__min js-counter-min"></div>
+												<input class="counter__input js-counter-input" type="number" value="1" />
+												<div class="counter__max js-counter-max"></div>
+											</div>
+										</div>
+
+										<div class="cart__item cart__item_price">6 850 руб.</div>
+
+										<div class="cart__item cart__item_price">19 700 руб.</div>
+
+										<div class="cart__item cart__item_del">
+											<a href="#" class="cart__del"></a>
+										</div>
+									</div>
+
+									<div class="cart__row">
+										<div class="cart__item cart__item_img">
+											<a href="#" class="cart__img" style="background-image: url(img/cart.jpg);"></a>
+										</div>
+
+										<div class="cart__item cart__item_name">
+											<a href="#" class="cart__name">Continental SportContact 6 235/35 R19 91Y</a>
+										</div>
+
+										<div class="cart__item cart__item_count">
+											<div class="counter js-counter">
+												<div class="counter__min js-counter-min"></div>
+												<input class="counter__input js-counter-input" type="number" value="1" />
+												<div class="counter__max js-counter-max"></div>
+											</div>
+										</div>
+
+										<div class="cart__item cart__item_price">6 850 руб.</div>
+
+										<div class="cart__item cart__item_price">19 700 руб.</div>
+
+										<div class="cart__item cart__item_del">
+											<a href="#" class="cart__del"></a>
+										</div>
+									</div>
+
+									<div class="cart__result">
+										Итого: 7100 руб.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section><!-- end cart-wrap -->
+
+				<section class="order">
+					<form>
+						<div class="container">
+							<div class="row">
+								<div class="col-7">
+									<div class="order-card">
+										<div class="order-card__head">Адрес плательщика</div>
+
+										<div class="form-site">
+											<div class="order-card__content">
+												<div class="form-site__content">
+													<div class="form-site__field">
+														<input type="text" placeholder="Имя">
+													</div>
+
+													<div class="form-site__field">
+														<input type="text" placeholder="Адрес">
+													</div>
+
+													<div class="form-site__field">
+														<input type="email" placeholder="E-mail">
+													</div>
+
+													<div class="form-site__field">
+														<select id="country" class="select-site js-select">
+															<option value="Amtel">Российская Федерация</option>
+															<option value="Barum">Англия</option>
+															<option value="Barum">Испания</option>
+														</select>
+													</div>
+
+													<div class="form-site__field">
+														<input type="text" placeholder="Номер телефона">
+													</div>
+
+													<div class="form-site__field">
+														<select id="city" class="select-site js-select">
+															<option value="Amtel">Санкт-Петерьург и пригороды</option>
+															<option value="Barum">Москва</option>
+															<option value="Barum">Владимир</option>
+														</select>
+													</div>
+
+													<div class="form-site__field form-site__field_big">
+														<textarea placeholder="Вы можете добавить комментарий к своему заказу"></textarea>
+													</div>
+												</div>
+
+												<div class="input-check">
+													<input type="checkbox" id="garantee" checked="checked">
+													<label for="garantee" class="input-check__label"><span class="input-check__mark"></span><span class="input-check__text">Я прочитал <b>Условия использования</b> и согласен с условиями</span></label>
+												</div>
+
+												<input type="submit" value="Подтверждение заказа" class="btn btn_border btn_big">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-5">
+									<div class="order-card">
+										<div class="order-card__head">Способы доставки</div>
+										<div class="order-card__content">
+											<div class="order-card__text">Выберите подходящий способ доставки</div>
+
+											<div class="order-card__param">
+												<div class="input-check">
+													<input type="checkbox" id="param1">
+													<label for="param1" class="input-check__label"><span class="input-check__mark"></span><span class="input-check__text">Фиксированная стоимость доставки</span></label>
+												</div>
+
+												<div class="order-card__price">6 850 руб.</div>
+											</div>
+
+											<div class="order-card__param">
+												<div class="input-check">
+													<input type="checkbox" id="param2">
+													<label for="param2" class="input-check__label"><span class="input-check__mark"></span><span class="input-check__text">Самовывоз</span></label>
+												</div>
+
+												<div class="order-card__price">0 руб.</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="order-card">
+										<div class="order-card__head">Способы оплаты</div>
+
+										<div class="order-card__content">
+											<div class="order-card__text">Выберите способ оплаты заказа</div>
+
+											<div class="order-card__param">
+												<div class="input-check">
+													<input type="checkbox" id="param3" >
+													<label for="param3" class="input-check__label"><span class="input-check__mark"></span><span class="input-check__text">Оплата наличными (только СПБ)</span></label>
+												</div>
+											</div>
+
+											<div class="order-card__param">
+												<div class="input-check">
+													<input type="checkbox" id="param4">
+													<label for="param4" class="input-check__label"><span class="input-check__mark"></span><span class="input-check__text">Банковский перевод (Регионы)</span></label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</section>
+			</main>
+			//= ../footer/footer.html
+		</div>
+
+		//= ../footer/footer-script.html
+	</body>
+</html>

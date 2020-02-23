@@ -1,0 +1,68 @@
+/*-------------- form-site -----------------*/
+.form-site{
+	.container{
+		padding-bottom: 95px;
+		border-bottom: 1px solid #dadada;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea{
+		height: 50px;
+		width: 100%;
+		outline: none;
+		border: 1px solid #dbdbdb;
+		border-radius: 4px;
+		@include font(normal, normal, 14px, 48px, #000);
+		padding: 0 20px;
+		margin: 0;
+	}
+
+	textarea{
+		height: 157px;
+	}
+
+	input[type="text"]::placeholder,
+	input[type="email"]::placeholder,
+	textarea::placeholder{
+		color: #757575;;
+	}
+
+	input[type="text"]:focus,
+	input[type="email"]:focus,
+	textarea:focus{
+		border-color:$color-orange;
+	}
+
+	&__content{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__field{
+		width: calc(50% - 15px);
+		margin-bottom: 18px;
+	}
+
+	&__field_big{
+		width: 100%;
+	}
+
+	.select2-container .select2-selection--single{
+		border: 1px solid #dbdbdb;
+		border-radius: 4px;
+	}
+
+	&__content + .input-check{
+		margin-top: -2px;
+	}
+
+	.btn,
+	input[type="submit"].btn{
+		height: 68px;
+		width: 370px;
+		line-height: 64px;
+		margin-top: 36px;
+	}
+}

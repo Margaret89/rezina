@@ -1,0 +1,92 @@
+/*-------------- cart -----------------*/
+.cart{
+	background: #fff;
+	border-radius: 4px;
+
+	&__head,
+	&__row{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #f5f5f5;
+	}
+
+	&__head &__item{
+		@include font(normal, bold, 14px, 1.2, #000);
+		text-transform: uppercase;
+	}
+
+	&__head &__item:not(:last-child){
+		border-right: 1px solid #f5f5f5;
+	}
+
+	&__item{
+		text-align: center;
+		padding: 15px 10px;
+	}
+
+	&__row &__item{
+		padding: 7.5px 10px;
+	}
+
+	&__item_img{width: 120px;}
+	&__item_name{width: calc(100% - 788px);}
+	&__item_count{width: 170px;}
+	&__item_price{width: 214px;}
+	&__item_del{width: 70px;}
+
+	&__img{
+		display: inline-block;
+		width: 100px;
+		height: 100px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	&__item_name,
+	&__row &__item_name{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	&__item_name,
+	&__item_name a{
+		@include font(normal, normal, 14px, 1.7, #000);
+		text-align: left;
+		text-decoration: none;
+		transition: all 0.2s ease 0s;
+	}
+
+	&__item_name a:hover{
+		color: $color-orange;
+	}
+
+	&__name{
+		max-width: 200px;
+	}
+
+	&__item_price{
+		@include font(normal, bold, 16px, 1.7, #000);
+	}
+
+	&__del{
+		display: inline-block;
+		width: 26px;
+		height: 26px;
+		background: url(#{$path-img}/sprite.png) no-repeat -5px -605px;
+		cursor: pointer;
+	}
+
+	&__del:hover{background-position: -40px -605px;}
+
+	&__result{
+		padding: 22px 30px;
+		@include font(normal, bold, 22px, 1, #000);
+		text-align: right;
+	}
+
+	.counter{
+		margin: 0 auto;
+	}
+}
