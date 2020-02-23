@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Каталог</title>
+		<title>Карточка товара</title>
 		<link rel="stylesheet" href="css/bootstrap-reboot.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.css">
 		<link rel="stylesheet" href="js/vendor/select2/select2.min.css">
@@ -162,7 +162,7 @@
 				</div><!-- end header-middle -->
 			
 				<div class="header-bottom">
-					<div class="category-tab js-tabs-page">
+					<div class="category-tab js-tabs-page js-tabs-no-active">
 						<div class="category-tab__top-wrap">
 							<div class="container">
 								<div class="row">
@@ -299,71 +299,216 @@
 							<div class="col-12">
 								<ul class="breadcrumb__list">
 									<li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Главная страница</a></li>
-									<li class="breadcrumb__item">Купить шины</li>
+									<li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Купить шины</a></li>
+									<li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Летние шины</a></li>
+									<li class="breadcrumb__item">Continental ContiSportContact 5P 255/35 R19 96Y RunFlat</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<div class="catalog">
-					<section class="catalog-action">
+				<div class="catalog-detail">
+					<section class="catalog-card bg-white">
 						<div class="container">
 							<div class="row">
-								<div class="col-12">
-									<div class="catalog-action__content">
-										<div class="catalog-action__left">
-											<div class="view">
-												<div class="view__item view__item_tile js-view-item active" data-view="tile"></div>
-												<div class="view__item view__item_table js-view-item" data-view="table"></div>
+								<div class="col-7">
+									<div class="product-slider">
+										<div class="product-slide-thumb js-product-slide-thumb d-none d-md-block">
+											<div class="product-slide-thumb__item" style="background-image: url(img/product-slider-img1.jpg);"></div>
+											<div class="product-slide-thumb__item" style="background-image: url(img/product-slider-img2.jpg);"></div>
+											<div class="product-slide-thumb__item" style="background-image: url(img/product-slider-img3.jpg);"></div>
+											<div class="product-slide-thumb__item" style="background-image: url(img/product-slider-img4.jpg);"></div>
+											<div class="product-slide-thumb__item" style="background-image: url(img/product-slider-img5.jpg);"></div>
+										</div>
+
+										<div class="product-slide-img js-product-slide-img">
+											<div class="product-slide-img__item" style="background-image: url(img/product-slider-img1.jpg);">
+												<div class="product-slide-img__sale"></div>
 											</div>
+											<div class="product-slide-img__item" style="background-image: url(img/product-slider-img2.jpg);"></div>
+											<div class="product-slide-img__item" style="background-image: url(img/product-slider-img3.jpg);"></div>
+											<div class="product-slide-img__item" style="background-image: url(img/product-slider-img4.jpg);">
+												<div class="product-slide-img__sale"></div>
+											</div>
+											<div class="product-slide-img__item" style="background-image: url(img/product-slider-img5.jpg);"></div>
+										</div>
+									</div><!-- end product-slider -->
+								</div>
 
-											<div class="cat-select">
-												<div class="cat-select__label">Сортировка:</div>
+								<div class="col-5">
+									<div class="catalog-card__info">
+										<div class="catalog-card__name">Continental ContiSportContact 5P 255/35 R19 96Y RunFlat</div>
 
-												<select id="sort" class="select-site js-select">
-													<option value="default">По умолчанию</option>
-													<option value="asc">По возрастанию</option>
-													<option value="desc">По убыванию</option>
-												</select>
+										<div class="catalog-card__rating">
+											<div class="rating-wrap">
+												<div class="rating"><span class="rating__content" style="width: 80%;"></span></div>
+												<div class="rating-wrap__text">(0)&nbsp;отзывов / Оставить отзыв</div>
 											</div>
 										</div>
 
-										<div class="catalog-action__right">
-											<div class="cat-select">
-												<div class="cat-select__label">Показать:</div>
-
-												<select id="page" class="select-site js-select">
-													<option value="default">16</option>
-													<option value="asc">24</option>
-													<option value="desc">32</option>
-													<option value="desc">50</option>
-													<option value="desc">100</option>
-												</select>
+										<div class="param">
+											<div class="param__item">
+												<div class="param__title">Производитель:</div>
+												<div class="param__val">Continental</div>
 											</div>
+
+											<div class="param__item">
+												<div class="param__title">Модель:</div>
+												<div class="param__val">ContiSportContact 5P</div>
+											</div>
+
+											<div class="param__item">
+												<div class="param__title">Наличие:</div>
+												<div class="param__val">16</div>
+											</div>
+
+											<div class="param__item">
+												<div class="param__title">Типоразмер:</div>
+												<div class="param__val">255/35 R19</div>
+											</div>
+										</div>
+
+										<div class="catalog-card-type">
+											<div class="catalog-card-type__icon"><img src="img/snow.png" alt=""></div>
+											<div class="catalog-card-type__text">Зимние, нешипованные</div>
+										</div>
+
+										<div class="catalog-card-count">
+											<div class="catalog-card-count__num">
+												<div class="catalog-card-count__label">Количество</div>
+
+												<div class="counter js-counter">
+													<div class="counter__min js-counter-min"></div>
+													<input class="counter__input js-counter-input" type="number" value="1" />
+													<div class="counter__max js-counter-max"></div>
+												</div>
+											</div>
+
+											<div class="catalog-card-count__note">Только четное количество</div>
+										</div>
+
+										<div class="catalog-card-price">
+											<div class="catalog-card-price__num"><span class="catalog-card-price__old">6 660 руб.</span>6 850 руб.</div>
+
+											<div class="catalog-card-price__note">Цена действительна при оплате наличными</div>
+										</div>
+
+										<div class="catalog-card__btn">
+											<a href="#" class="btn btn_border btn_big">Купить</a>
+
+											<ul class="catalog-card-menu">
+												<li class="catalog-card-menu__item"><a href="#">Доставка</a></li>
+												<li class="catalog-card-menu__item"><a href="#">Оплата</a></li>
+												<li class="catalog-card-menu__item"><a href="#">Гарантии</a></li>
+											</ul>
+										</div>
+
+										<div class="catalog-card-link">
+											<a href="#" class="catalog-card-link__item">
+												<div class="catalog-card-link__icon catalog-card-link__icon_compare"></div>
+												<div class="catalog-card-link__text">Сравнить</div>
+											</diav>
+
+											<a href="#" class="catalog-card-link__item">
+												<div class="catalog-card-link__icon catalog-card-link__icon_wish"></div>
+												<div class="catalog-card-link__text">В избранное</div>
+											</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</section><!-- end catalog-action -->
+					</section>
 
-					<section class="catalog-list-wrap">
+					<section class="catalog-tabs">
 						<div class="container">
 							<div class="row">
 								<div class="col-12">
+									<div class="tabs-page js-tabs-page">
+										<ul class="tabs-page__list js-tabs-page-list">
+											<li class="tabs-page__item js-tabs-page-item" data-item="tab-param">Характеристики</li>
+											<li class="tabs-page__item js-tabs-page-item" data-item="tab-riview">Отзывы</li>
+										</ul>
+
+										<div class="tabs-page__content js-tabs-page-content">
+											<div id="tab-param" class="tabs-page__content-item js-tabs-page-content-item js-tabs-page-content-item">
+												<div class="param">
+													<div class="param__item">
+														<div class="param__title">Рисунок проектора:</div>
+														<div class="param__val">асимметричный</div>
+													</div>
+													
+													<div class="param__item">
+														<div class="param__title">Сезонность:</div>
+														<div class="param__val">летние</div>
+													</div>
+
+													<div class="param__item">
+														<div class="param__title">Технология RunFlat:</div>
+														<div class="param__val">есть</div>
+													</div>
+													
+													<div class="param__item">
+														<div class="param__title">Высота профиля:</div>
+														<div class="param__val">35</div>
+													</div>
+
+													<div class="param__item">
+														<div class="param__title">Индекс нагрузки:</div>
+														<div class="param__val">96 (710 кг)</div>
+													</div>
+													
+													<div class="param__item">
+														<div class="param__title">Диаметр:</div>
+														<div class="param__val">19</div>
+													</div>
+
+													<div class="param__item">
+														<div class="param__title">Индекс скорости:</div>
+														<div class="param__val">Y (до 300 км/ч)</div>
+													</div>
+
+													<div class="param__item">
+														<div class="param__title">Ширина профиля:</div>
+														<div class="param__val">255</div>
+													</div>
+
+													<div class="param__item">
+														<div class="param__title">Назначение:</div>
+														<div class="param__val">для легкового автомобиля</div>
+													</div>
+												</div>
+											</div>
+											<div id="tab-riview" class="tabs-page__content-item js-tabs-page-content-item js-tabs-page-content-item">
+												Отзывы
+											</div>
+										</div>
+									</div><!-- end tabs-page -->
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="catalog-previous">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="h1 h1_center">Ранее вы смотрели</div>
+
 									<div class="catalog-list js-catalog-list">
 										<div class="catalog-list__item">
 											<div class="catalog-list__content">
 												<div class="catalog-list__img-wrap">
 													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
 													<a href="#" class="catalog-list__wish"></a>
+													<div class="catalog-list__sale"></div>
 												</div>
 										
 												<div class="catalog-list__info">
 													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
 										
-													<div class="catalog-list__price">6 850 руб.</div>
+													<div class="catalog-list__price"><span class="catalog-list__old-price">6 660 руб</span> 6 850 руб.</div>
 										
 													<a href="#" class="btn btn_border">Купить</a>
 										
@@ -376,12 +521,13 @@
 												<div class="catalog-list__img-wrap">
 													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
 													<a href="#" class="catalog-list__wish"></a>
+													<div class="catalog-list__sale"></div>
 												</div>
 										
 												<div class="catalog-list__info">
 													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
 										
-													<div class="catalog-list__price">6 850 руб.</div>
+													<div class="catalog-list__price"><span class="catalog-list__old-price">6 660 руб</span> 6 850 руб.</div>
 										
 													<a href="#" class="btn btn_border">Купить</a>
 										
@@ -394,12 +540,13 @@
 												<div class="catalog-list__img-wrap">
 													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
 													<a href="#" class="catalog-list__wish"></a>
+													<div class="catalog-list__sale"></div>
 												</div>
 										
 												<div class="catalog-list__info">
 													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
 										
-													<div class="catalog-list__price">6 850 руб.</div>
+													<div class="catalog-list__price"><span class="catalog-list__old-price">6 660 руб</span> 6 850 руб.</div>
 										
 													<a href="#" class="btn btn_border">Купить</a>
 										
@@ -412,85 +559,13 @@
 												<div class="catalog-list__img-wrap">
 													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
 													<a href="#" class="catalog-list__wish"></a>
+													<div class="catalog-list__sale"></div>
 												</div>
 										
 												<div class="catalog-list__info">
 													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
 										
-													<div class="catalog-list__price">6 850 руб.</div>
-										
-													<a href="#" class="btn btn_border">Купить</a>
-										
-													<div class="catalog-list__compare"><a href="#" class="catalog-list__compare-link">Сравнить</a></div>
-												</div>
-											</div>
-										</div>
-
-										<div class="catalog-list__item">
-											<div class="catalog-list__content">
-												<div class="catalog-list__img-wrap">
-													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
-													<a href="#" class="catalog-list__wish"></a>
-												</div>
-										
-												<div class="catalog-list__info">
-													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
-										
-													<div class="catalog-list__price">6 850 руб.</div>
-										
-													<a href="#" class="btn btn_border">Купить</a>
-										
-													<div class="catalog-list__compare"><a href="#" class="catalog-list__compare-link">Сравнить</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="catalog-list__item">
-											<div class="catalog-list__content">
-												<div class="catalog-list__img-wrap">
-													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
-													<a href="#" class="catalog-list__wish"></a>
-												</div>
-										
-												<div class="catalog-list__info">
-													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
-										
-													<div class="catalog-list__price">6 850 руб.</div>
-										
-													<a href="#" class="btn btn_border">Купить</a>
-										
-													<div class="catalog-list__compare"><a href="#" class="catalog-list__compare-link">Сравнить</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="catalog-list__item">
-											<div class="catalog-list__content">
-												<div class="catalog-list__img-wrap">
-													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
-													<a href="#" class="catalog-list__wish"></a>
-												</div>
-										
-												<div class="catalog-list__info">
-													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
-										
-													<div class="catalog-list__price">6 850 руб.</div>
-										
-													<a href="#" class="btn btn_border">Купить</a>
-										
-													<div class="catalog-list__compare"><a href="#" class="catalog-list__compare-link">Сравнить</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="catalog-list__item">
-											<div class="catalog-list__content">
-												<div class="catalog-list__img-wrap">
-													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
-													<a href="#" class="catalog-list__wish"></a>
-												</div>
-										
-												<div class="catalog-list__info">
-													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
-										
-													<div class="catalog-list__price">6 850 руб.</div>
+													<div class="catalog-list__price"><span class="catalog-list__old-price">6 660 руб</span> 6 850 руб.</div>
 										
 													<a href="#" class="btn btn_border">Купить</a>
 										
@@ -504,50 +579,25 @@
 						</div>
 					</section>
 
-					<section class="slider-post-wrap">
+					<section class="catalog-other">
 						<div class="container">
 							<div class="row">
 								<div class="col-12">
-									<div class="slider-post js-slider-post">
-										<div class="slider-post__item" style="background-image: url(img/bg-slider-post.jpg);">
-											<div class="slider-post__content">
-												<div class="slider-post__title">Надежные колеса — залог <span class="slider-post__main">безопасности</span></div>
-											</div>
-										</div>
-
-										<div class="slider-post__item" style="background-image: url(img/bg-slider-post.jpg);">
-											<div class="slider-post__content">
-												<div class="slider-post__title">Надежные колеса — залог <span class="slider-post__main">безопасности</span> 2</div>
-											</div>
-										</div>
-
-										<div class="slider-post__item" style="background-image: url(img/bg-slider-post.jpg);">
-											<div class="slider-post__content">
-												<div class="slider-post__title">Надежные колеса — залог <span class="slider-post__main">безопасности</span> 3</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section><!-- end slider-post-wrap -->
-
-					<section class="catalog-list-wrap">
-						<div class="container">
-							<div class="row">
-								<div class="col-12">
+									<div class="h1 h1_center">Похожие модели</div>
+									
 									<div class="catalog-list js-catalog-list">
 										<div class="catalog-list__item">
 											<div class="catalog-list__content">
 												<div class="catalog-list__img-wrap">
 													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
 													<a href="#" class="catalog-list__wish"></a>
+													<div class="catalog-list__sale"></div>
 												</div>
 										
 												<div class="catalog-list__info">
 													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
 										
-													<div class="catalog-list__price">6 850 руб.</div>
+													<div class="catalog-list__price"><span class="catalog-list__old-price">6 660 руб</span> 6 850 руб.</div>
 										
 													<a href="#" class="btn btn_border">Купить</a>
 										
@@ -560,12 +610,13 @@
 												<div class="catalog-list__img-wrap">
 													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
 													<a href="#" class="catalog-list__wish"></a>
+													<div class="catalog-list__sale"></div>
 												</div>
 										
 												<div class="catalog-list__info">
 													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
 										
-													<div class="catalog-list__price">6 850 руб.</div>
+													<div class="catalog-list__price"><span class="catalog-list__old-price">6 660 руб</span> 6 850 руб.</div>
 										
 													<a href="#" class="btn btn_border">Купить</a>
 										
@@ -578,12 +629,13 @@
 												<div class="catalog-list__img-wrap">
 													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
 													<a href="#" class="catalog-list__wish"></a>
+													<div class="catalog-list__sale"></div>
 												</div>
 										
 												<div class="catalog-list__info">
 													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
 										
-													<div class="catalog-list__price">6 850 руб.</div>
+													<div class="catalog-list__price"><span class="catalog-list__old-price">6 660 руб</span> 6 850 руб.</div>
 										
 													<a href="#" class="btn btn_border">Купить</a>
 										
@@ -596,85 +648,13 @@
 												<div class="catalog-list__img-wrap">
 													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
 													<a href="#" class="catalog-list__wish"></a>
+													<div class="catalog-list__sale"></div>
 												</div>
 										
 												<div class="catalog-list__info">
 													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
 										
-													<div class="catalog-list__price">6 850 руб.</div>
-										
-													<a href="#" class="btn btn_border">Купить</a>
-										
-													<div class="catalog-list__compare"><a href="#" class="catalog-list__compare-link">Сравнить</a></div>
-												</div>
-											</div>
-										</div>
-
-										<div class="catalog-list__item">
-											<div class="catalog-list__content">
-												<div class="catalog-list__img-wrap">
-													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
-													<a href="#" class="catalog-list__wish"></a>
-												</div>
-										
-												<div class="catalog-list__info">
-													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
-										
-													<div class="catalog-list__price">6 850 руб.</div>
-										
-													<a href="#" class="btn btn_border">Купить</a>
-										
-													<div class="catalog-list__compare"><a href="#" class="catalog-list__compare-link">Сравнить</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="catalog-list__item">
-											<div class="catalog-list__content">
-												<div class="catalog-list__img-wrap">
-													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
-													<a href="#" class="catalog-list__wish"></a>
-												</div>
-										
-												<div class="catalog-list__info">
-													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
-										
-													<div class="catalog-list__price">6 850 руб.</div>
-										
-													<a href="#" class="btn btn_border">Купить</a>
-										
-													<div class="catalog-list__compare"><a href="#" class="catalog-list__compare-link">Сравнить</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="catalog-list__item">
-											<div class="catalog-list__content">
-												<div class="catalog-list__img-wrap">
-													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
-													<a href="#" class="catalog-list__wish"></a>
-												</div>
-										
-												<div class="catalog-list__info">
-													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
-										
-													<div class="catalog-list__price">6 850 руб.</div>
-										
-													<a href="#" class="btn btn_border">Купить</a>
-										
-													<div class="catalog-list__compare"><a href="#" class="catalog-list__compare-link">Сравнить</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="catalog-list__item">
-											<div class="catalog-list__content">
-												<div class="catalog-list__img-wrap">
-													<a href="#" class="catalog-list__img" style="background-image: url(img/product-item.jpg);"></a>
-													<a href="#" class="catalog-list__wish"></a>
-												</div>
-										
-												<div class="catalog-list__info">
-													<div class="catalog-list__name"><a href="#">Nokian Tyres Hakkapeliitta 9 205/60 R16 96T</a></div>
-										
-													<div class="catalog-list__price">6 850 руб.</div>
+													<div class="catalog-list__price"><span class="catalog-list__old-price">6 660 руб</span> 6 850 руб.</div>
 										
 													<a href="#" class="btn btn_border">Купить</a>
 										
@@ -683,87 +663,11 @@
 											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<section>
-						<div class="container">
-							<div class="row">
-								<div class="col-12">
-									<div class="pager">
-										<a href="#" class="pager__arr pager__arr_left"></a>
-										<a href="#" class="pager__item active">1</a>
-										<a href="#" class="pager__item">2</a>
-										<a href="#" class="pager__item">3</a>
-										<a href="#" class="pager__item">4</a>
-										<a href="#" class="pager__item">...</a>
-										<a href="#" class="pager__item">9</a>
-										<a href="#" class="pager__arr pager__arr_right"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<section class="catalog__bottom-text">
-						<div class="container">
-							<div class="row">
-								<div class="col-10 offset-1">
-									<div class="h1 h1_center">Шины и диски в Санкт-Петербурге</div>
-
-									<p>Каждый автомобилист сталкивается с проблемой выбора магазина автомобильных шин и дисков.</p>
-
-									<hr>
-
-									<p style="font-weight: bold; font-size: 16px;">Замена новых шин требуется, когда:</p>
-
-									<ul>
-										<li>Резина приходит в негодность. Это могут быть механические повреждения или естественная стертость. Заплатка не гарантирует безопасной эксплуатации. Лучше с залатанными шинами доехать до автосервиса, предварительно заказав шины в нашем магазине;</li>
-
-										<li>Нужно "переобуть" автомобиль с летних на зимние шины или наоборот. К сожалению, не все, приобретая автомобиль, покупают сразу весь комплект резины;</li>
-
-										<li>Магазин автошин также может понадобиться, если у шин нарушилась геометрия. Это происходит из-за неправильного хранения или, как следствие эксплуатации. Это выясняется на стенде при техосмотре. Изменение геометрии опасно, поскольку из-за этого автомобиль при движении уводит в сторону.</li>
-									</ul>
-
-									<p>Замена и покупка дисков также частая проблема. Диски деформируются в результате эксплуатации. Бывает, что они ломаются, и тогда необходима сварка. Но восстановленный диск менее надежен, чем новый, да и выглядит хуже. Дело, конечно, не только во внешнем виде: главное — это безопасность.</p>
-
-									<div class="h2">Преимущества нашего магазина</div>
-
-								<p>Покупать автошины в интернет магазине Rezinavsem.ru удобно, поскольку не нужно никуда ехать и долго ходить среди стеллажей. Здесь большой выбор шин и удобная система подбора. Чтобы не листать сайт бесконечно, сделан фильтр, с помощью которого резина подбирается по нескольким критериям:</p>
-
-								<ul>
-									<li>Сезонность: всесезонная, зимняя и летняя резина, шипованная и нешипованная;</li>
-
-									<li>Наш магазин резины и дисков продает изделия ведущих российских и зарубежных производителей. Можно выбрать ту фирму, что вам знакома или рекомендована.</li>
-
-									<li>Отдельно идет подбор по физическим характеристикам: ширина и высота профиля.</li>
-								</ul>
-
-								<p>Не менее удобная система фильтрации сделана для выбора дисков: по бренду, ширине, сверловке и т.п.</p>
-
-								<p>Наш магазин шин и дисков цены старается держать на том уровне, который позволяет купить покрышки и диски максимально широкому потребителю.</p>
-
-								<p>Еще одно наше преимуществом - собственный склад. Можно заказать доставку шин, или забрать шины и диски со склада на Воздухоплавательной.</p>
-
-								<p>Наш колл-центр работает без выходных. Примем звонок, поможем с выбором, если теряетесь в ассортименте.
-								Еще одним моментом является то, что, зайдя в наш каталог, видно количество продукции, доступное на нашем складе. Это важно, поскольку оперативность замены шин или дисков - важный фактор.
-								Не обещаем ничего безосновательно. Если клиент видит, что у нас есть пять пар шин на складе, значит смело можно оформлять на них заказ, не боясь, что на его выполнение потратится больше времени, чем ожидается.</p>
-
-								<p>Выбирая магазин резины и дисков в СПб, нужно понимать, что не стоит доверять сомнительным организациям, ведь надежные колеса — залог безопасности.</p>
 								</div>
 							</div>
 						</div>
 					</section>
 				</div>
-
-				
-
-			
-
-				
-
 			</main>
 			<footer class="footer">
 				<div class="container">

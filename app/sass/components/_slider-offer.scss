@@ -3,6 +3,11 @@
 	background: #fff;
 	border: 6px solid $color-blue;
 	box-shadow: 0px 26px 46px 0px rgba(0,0,0,0.06);
+	display: none;
+
+	&.slick-initialized{
+		display: block;
+	}
 
 	&__item{
 		display: flex!important;

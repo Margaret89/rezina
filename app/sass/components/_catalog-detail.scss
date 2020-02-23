@@ -1,0 +1,337 @@
+/*-------------- catalog-detail -----------------*/
+.product-slider{
+	display: flex;
+}
+
+.product-slide-thumb{
+	width: 120px;
+	height: 540px;
+	overflow: hidden;
+	margin-right: 10px;
+	padding: 20px 0;
+
+	&.slick-initialized{
+		height: auto;
+		overflow: visible;
+	}
+
+	&__item{
+		display: inline-block;
+		width: 120px;
+		height: 120px;
+		margin: 5px 0;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		cursor: pointer;
+		position: relative;
+	}
+
+	&__item::after{
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: rgba(255,255,255,0.45);
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+
+	&__item:hover::after,
+	&__item.slick-current::after{
+		opacity: 0;
+	}
+
+	&.slick-vertical .slick-slide{
+		height: 120px;
+		border: 0;
+		outline: 0;
+	}
+
+	.slick-arrow{
+		display: inline-block;
+		width: 20px;
+		height: 13px;
+		outline: 0;
+		border: 0;
+		font-size: 0;
+		padding: 0;
+		margin: 0;
+		background-image: url(#{$path-img}/sprite.png);
+		background-repeat: no-repeat;
+		background-color: transparent;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		cursor: pointer;
+	}
+
+	.slick-prev{
+		top: 5px;
+		background-position: -80px -325px
+	}
+
+	.slick-next{
+		bottom: 5px;
+		background-position: -80px -360px
+	}
+
+	.slick-prev:hover{background-position: -50px -325px}
+	.slick-next:hover{background-position: -50px  -360px}
+}
+
+.product-slide-img{
+	width: calc(100% - 130px);
+	overflow: hidden;
+	padding-top: 35px;
+	padding-bottom: 30px;
+
+	&.slick-initialized{
+		height: auto;
+		overflow: visible;
+	}
+
+	&__item{
+		display: inline-block;
+		width: 540px;
+		height: 540px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		position: relative;
+	}
+
+	&.slick-vertical .slick-slide{
+		height: 540px;
+		border: 0;
+		outline: 0;
+	}
+
+	&__sale{
+		display: inline-block;
+		width: 40px;
+		height: 42px;
+		background: url(#{$path-img}/sprite.png) no-repeat -5px -350px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+.catalog-card{
+	&__info{
+		padding-top: 27px;
+		padding-bottom: 50px;
+	}
+
+	&__name{
+		@include font(normal, bold, 30px, 1.3, #000);
+		margin-bottom: 20px;
+	}
+
+	&__rating{
+		margin-bottom: 16px;
+		margin-left: -2px;
+	}
+
+	.param{
+		margin-bottom: 20px;
+	}
+
+	&__btn{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.btn{
+			width: 182px;
+			height: 68px;
+			line-height: 64px;
+		}
+	}
+}
+
+.param{
+	&__item{
+		display: flex;
+		padding: 12px 0;
+		background: #fff;
+	}
+
+	&__item:not(:last-child){
+		border-bottom: 1px solid #ebebeb;
+	}
+
+	&__title,
+	&__val{
+		@include font(normal, normal, 14px, 1.2, #000);
+	}
+
+	&__title{
+		width: 170px;
+		color: #757575;
+	}
+
+	&__val{
+		margin-left: 30px;
+	}
+}
+
+.catalog-card-type{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 34px;
+
+	&__icon{
+		display: inline-block;
+		width: 22px;
+	}
+
+	&__text{
+		width: calc(100% - 30px);
+		@include font(normal, normal, 14px, 1.2, #999);
+	}
+}
+
+.catalog-card-count{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+
+	&__num{
+		display: flex;
+		align-items: center;
+	}
+
+	&__label{
+		@include font(normal, normal, 14px, 1.2, #000);
+		margin-right: 22px;
+	}
+
+	&__note{
+		width: 170px;
+		@include font(normal, normal, 14px, 1.5, #757575);
+	}
+}
+
+.catalog-card-price{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 21px;
+
+	&__num{
+		@include font(normal, bold, 30px, 1.2, #000);
+	}
+
+	&__old{
+		@include font(normal, normal, 16px, 1.2, #adadad);
+		text-decoration: line-through;
+		margin-right: 12px;
+	}
+
+	&__note{
+		width: 170px;
+		@include font(normal, normal, 14px, 1.5, #757575);
+	}
+}
+
+.catalog-card-menu{
+	width: 170px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	&__item{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	&__item,
+	&__item a{
+		@include font(normal, normal, 14px, 1.5, #999);
+		text-decoration: none;
+	}
+
+	&__item:not(:last-child){
+		margin-bottom: 12px;
+	}
+
+	&__item a:hover{
+		color: $color-orange;
+	}
+}
+
+.catalog-card-link{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15px;
+
+	&__item{
+		display: inline-block;
+		padding-left: 20px;
+		text-decoration: none;
+		position: relative;
+	}
+
+	&__item:not(:last-child){
+		margin-right: 32px;
+	}
+
+	&__icon{
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+		background-image: url(#{$path-img}/sprite.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		left: 0;
+		@include top-center;
+	}
+
+	&__icon_compare{background-position: -5px -460px;}
+	&__icon_wish{background-position: -5px -580px;}
+
+	&__text{
+		@include font(normal, normal, 14px, 1.2, #999);
+		transition: all 0.3s ease 0s;
+	}
+
+	&__item:hover &__text{color: $color-text;}
+	&__item:hover &__icon_compare{background-position: -40px -460px;}
+	&__item:hover &__icon_wish{background-position: -40px -580px;}
+}
+
+.catalog-tabs{
+	.param{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-left: -15px;
+		margin-right: -15px;
+
+		&__item{
+			width: calc(50% - 30px);
+			padding: 22px 26px;
+			margin: 0 15px;
+		}
+
+		&__title{
+			width: 50%;
+		}
+	}
+}
+
+.catalog-previous{
+	margin-top: 75px;
+}
+
+.catalog-other{
+	margin-top: 60px;
+}

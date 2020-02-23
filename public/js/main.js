@@ -5,12 +5,12 @@ $(document).ready(function () {
 
 	function tabPage(name) {
 		if ($(name).length) {
-			$(name+'-list').each(function(){
-				$(this).find(name+'-item:first').addClass("active");
-			});
 
-			$(name+'-content').each(function(){
-				$(this).find(name+'-content-item:first').fadeIn();
+			$(name).each(function(){
+				if (!$(this).hasClass('js-tabs-no-active')) {
+					$(this).find(name+'-item:first').addClass("active");
+					$(this).find(name+'-content-item:first').fadeIn();
+				}
 			});
 
 			$(name+'-item').click(function(e) {
@@ -69,6 +69,52 @@ $(document).ready(function () {
 			} else {
 				$('.js-catalog-list').removeClass('catalog-list_table');
 			}
+		});
+	}
+
+// Слайдер карточки товаров
+	$('.js-product-slide-img').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: false,
+		vertical: true,
+		focusOnSelect: true,
+		asNavFor: '.js-product-slide-thumb',
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					dots: true,
+					vertical: false,
+				}
+			},
+		]
+	});
+
+	$('.js-product-slide-thumb').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		asNavFor: '.js-product-slide-img',
+		dots: false,
+		arrows: true,
+		vertical: true,
+		focusOnSelect: true,
+	});
+
+// Счетчик
+	if ($('.js-counter').length) {
+		$('.js-counter-min').click(function(){
+			var $countNum = $(this).siblings(".js-counter-input");
+
+			if ($countNum.val() > 1) {
+				$countNum.val(+$countNum.val() - 1);
+			}
+		});
+
+		$('.js-counter-max').click(function(){
+			var $countNum = $(this).siblings(".js-counter-input");
+			$countNum.val(+$countNum.val() + 1);
 		});
 	}
 });

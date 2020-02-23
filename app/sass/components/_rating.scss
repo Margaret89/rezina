@@ -1,4 +1,14 @@
 /*-------------- rating -----------------*/
+.rating-wrap{
+	display: flex;
+	align-items: center;
+
+	&__text{
+		@include font(normal, normal, 14px, 1.2, #999);
+		margin-left: 15px;
+	}
+}
+
 .rating{
 	display: inline-block;
 	vertical-align: middle;

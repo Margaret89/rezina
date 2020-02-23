@@ -19,6 +19,11 @@
 .slider-post{
 	position: relative;
 	padding-bottom: 42px;
+	display: none;
+
+	&.slick-initialized{
+		display: block;
+	}
 
 	&__item{
 		display: flex!important;
