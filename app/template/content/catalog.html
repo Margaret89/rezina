@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+	//= ../header/header-meta.html
+		<title>Каталог</title>
+	//= ../header/header-link.html
+	</head>
+	<body>
+		<div class="wrapper">
+			//= ../header/header.html
+			<main>
+				<section class="breadcrumb">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<ul class="breadcrumb__list">
+									<li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Главная страница</a></li>
+									<li class="breadcrumb__item">Купить шины</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="catalog">
+					<section class="catalog-action">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="catalog-action__content">
+										<div class="catalog-action__left">
+											<div class="view">
+												<div class="view__item view__item_tile js-view-item active" data-view="tile"></div>
+												<div class="view__item view__item_table js-view-item" data-view="table"></div>
+											</div>
+
+											<div class="cat-select">
+												<div class="cat-select__label">Сортировка:</div>
+
+												<select id="sort" class="select-site js-select">
+													<option value="default">По умолчанию</option>
+													<option value="asc">По возрастанию</option>
+													<option value="desc">По убыванию</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="catalog-action__right">
+											<div class="cat-select">
+												<div class="cat-select__label">Показать:</div>
+
+												<select id="page" class="select-site js-select">
+													<option value="default">16</option>
+													<option value="asc">24</option>
+													<option value="desc">32</option>
+													<option value="desc">50</option>
+													<option value="desc">100</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section><!-- end catalog-action -->
+
+					<section class="catalog-list-wrap">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="catalog-list js-catalog-list">
+										//= ../partial/product-item.html
+										//= ../partial/product-item.html
+										//= ../partial/product-item.html
+										//= ../partial/product-item.html
+
+										//= ../partial/product-item.html
+										//= ../partial/product-item.html
+										//= ../partial/product-item.html
+										//= ../partial/product-item.html
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="slider-post-wrap">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="slider-post js-slider-post">
+										<div class="slider-post__item" style="background-image: url(img/bg-slider-post.jpg);">
+											<div class="slider-post__content">
+												<div class="slider-post__title">Надежные колеса — залог <span class="slider-post__main">безопасности</span></div>
+											</div>
+										</div>
+
+										<div class="slider-post__item" style="background-image: url(img/bg-slider-post.jpg);">
+											<div class="slider-post__content">
+												<div class="slider-post__title">Надежные колеса — залог <span class="slider-post__main">безопасности</span> 2</div>
+											</div>
+										</div>
+
+										<div class="slider-post__item" style="background-image: url(img/bg-slider-post.jpg);">
+											<div class="slider-post__content">
+												<div class="slider-post__title">Надежные колеса — залог <span class="slider-post__main">безопасности</span> 3</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section><!-- end slider-post-wrap -->
+
+					<section class="catalog-list-wrap">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="catalog-list js-catalog-list">
+										//= ../partial/product-item.html
+										//= ../partial/product-item.html
+										//= ../partial/product-item.html
+										//= ../partial/product-item.html
+
+										//= ../partial/product-item.html
+										//= ../partial/product-item.html
+										//= ../partial/product-item.html
+										//= ../partial/product-item.html
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="pager">
+										<a href="#" class="pager__arr pager__arr_left"></a>
+										<a href="#" class="pager__item active">1</a>
+										<a href="#" class="pager__item">2</a>
+										<a href="#" class="pager__item">3</a>
+										<a href="#" class="pager__item">4</a>
+										<a href="#" class="pager__item">...</a>
+										<a href="#" class="pager__item">9</a>
+										<a href="#" class="pager__arr pager__arr_right"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="catalog__bottom-text">
+						<div class="container">
+							<div class="row">
+								<div class="col-10 offset-1">
+									<div class="h1 h1_center">Шины и диски в Санкт-Петербурге</div>
+
+									<p>Каждый автомобилист сталкивается с проблемой выбора магазина автомобильных шин и дисков.</p>
+
+									<hr>
+
+									<p style="font-weight: bold; font-size: 16px;">Замена новых шин требуется, когда:</p>
+
+									<ul>
+										<li>Резина приходит в негодность. Это могут быть механические повреждения или естественная стертость. Заплатка не гарантирует безопасной эксплуатации. Лучше с залатанными шинами доехать до автосервиса, предварительно заказав шины в нашем магазине;</li>
+
+										<li>Нужно "переобуть" автомобиль с летних на зимние шины или наоборот. К сожалению, не все, приобретая автомобиль, покупают сразу весь комплект резины;</li>
+
+										<li>Магазин автошин также может понадобиться, если у шин нарушилась геометрия. Это происходит из-за неправильного хранения или, как следствие эксплуатации. Это выясняется на стенде при техосмотре. Изменение геометрии опасно, поскольку из-за этого автомобиль при движении уводит в сторону.</li>
+									</ul>
+
+									<p>Замена и покупка дисков также частая проблема. Диски деформируются в результате эксплуатации. Бывает, что они ломаются, и тогда необходима сварка. Но восстановленный диск менее надежен, чем новый, да и выглядит хуже. Дело, конечно, не только во внешнем виде: главное — это безопасность.</p>
+
+									<div class="h2">Преимущества нашего магазина</div>
+
+								<p>Покупать автошины в интернет магазине Rezinavsem.ru удобно, поскольку не нужно никуда ехать и долго ходить среди стеллажей. Здесь большой выбор шин и удобная система подбора. Чтобы не листать сайт бесконечно, сделан фильтр, с помощью которого резина подбирается по нескольким критериям:</p>
+
+								<ul>
+									<li>Сезонность: всесезонная, зимняя и летняя резина, шипованная и нешипованная;</li>
+
+									<li>Наш магазин резины и дисков продает изделия ведущих российских и зарубежных производителей. Можно выбрать ту фирму, что вам знакома или рекомендована.</li>
+
+									<li>Отдельно идет подбор по физическим характеристикам: ширина и высота профиля.</li>
+								</ul>
+
+								<p>Не менее удобная система фильтрации сделана для выбора дисков: по бренду, ширине, сверловке и т.п.</p>
+
+								<p>Наш магазин шин и дисков цены старается держать на том уровне, который позволяет купить покрышки и диски максимально широкому потребителю.</p>
+
+								<p>Еще одно наше преимуществом - собственный склад. Можно заказать доставку шин, или забрать шины и диски со склада на Воздухоплавательной.</p>
+
+								<p>Наш колл-центр работает без выходных. Примем звонок, поможем с выбором, если теряетесь в ассортименте.
+								Еще одним моментом является то, что, зайдя в наш каталог, видно количество продукции, доступное на нашем складе. Это важно, поскольку оперативность замены шин или дисков - важный фактор.
+								Не обещаем ничего безосновательно. Если клиент видит, что у нас есть пять пар шин на складе, значит смело можно оформлять на них заказ, не боясь, что на его выполнение потратится больше времени, чем ожидается.</p>
+
+								<p>Выбирая магазин резины и дисков в СПб, нужно понимать, что не стоит доверять сомнительным организациям, ведь надежные колеса — залог безопасности.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				
+
+			
+
+				
+
+			</main>
+			//= ../footer/footer.html
+		</div>
+
+		//= ../footer/footer-script.html
+	</body>
+</html>

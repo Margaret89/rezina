@@ -56,4 +56,19 @@ $(document).ready(function () {
 // Слайдер предложений
 	$('.js-slider-offer').slick();
 
+// Переключение вида каталога
+	if ($('.js-view-item').length) {
+		$('.js-view-item').on('click', function(){
+			var typeView = $(this).data('view');
+
+			$('.js-view-item').removeClass('active');
+			$(this).addClass('active');
+
+			if (typeView =='table') {
+				$('.js-catalog-list').addClass('catalog-list_table');
+			} else {
+				$('.js-catalog-list').removeClass('catalog-list_table');
+			}
+		});
+	}
 });

@@ -1,0 +1,66 @@
+﻿/*----------- pager -------------*/
+.pager{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 44px 0 20px;
+
+	&__item,
+	&__arr{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 60px;
+		@include font(normal, normal, 14px, 1, #757575);
+		text-align: center;
+		text-decoration: none;
+		background: #fff;
+		position: relative;
+	}
+
+	&__item,
+	&__arr_left{
+		border-right: 1px solid #f5f5f5;
+	}
+
+	&__arr_left::after,
+	&__arr_right::after{
+		content: '';
+		display: inline-block;
+		width: 6px;
+		height: 10px;
+		background-image: url(#{$path-img}/sprite.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		@include top-center;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+
+	&__arr_left::after{background-position: -65px -400px;}
+	&__arr_right::after{background-position: -85px -400px;}
+
+	&__arr_left{
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+
+	&__arr_right{
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+
+	&__arr_left:hover::after, &__arr_left.active::after{background-position: -65px -420px;}
+	&__arr_right:hover::after, &__arr_right.active::after{background-position: -85px -420px;}
+
+	&__item.active,
+	&__item:hover,
+	&__arr.active,
+	&__arr:hover{
+		background: $color-blue;
+		color: #fff;
+	}
+}

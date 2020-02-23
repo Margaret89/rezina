@@ -1,0 +1,38 @@
+/*-------------- breadcrumb -----------------*/
+.breadcrumb{
+	margin-top: 25px;
+	margin-bottom: 25px;
+
+	&__list,
+	&__item{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	&__list{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item{
+		@include font(normal, normal, 14px, 1.5, $color-text);
+		position: relative;
+	}
+
+	&__item:not(:last-child)::after{
+		content: '»';
+		display: inline-block;
+		margin-left: 7px;
+		margin-right: 7px;
+	}
+
+	&__link{
+		color: #757575;
+		text-decoration: none;
+	}
+
+	&__link:hover{
+		color: $color-orange;
+	}
+}
