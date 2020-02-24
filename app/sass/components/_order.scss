@@ -24,7 +24,6 @@
 	&__param{
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 	}
 
 	&__param:not(:last-child){
@@ -37,11 +36,20 @@
 		padding-left: 10px;
 	}
 
-	&__param .input-check{
-		max-width: calc(100% - 100px);
-	}
+	// &__param .input-check{
+	// 	max-width: calc(100% - 100px);
+	// }
 
 	.form-site{
 		margin-top: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	.order-card{
+		padding: 27px 24px;
+
+		&__head{margin-bottom: 24px;}
+		&__text{margin-bottom: 18px;}
 	}
 }

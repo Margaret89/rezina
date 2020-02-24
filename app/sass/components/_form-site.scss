@@ -66,3 +66,18 @@
 		margin-top: 36px;
 	}
 }
+
+@media (max-width: 767px) {
+	.form-site{
+		&__field{
+			width: 100%;
+		}
+
+		.btn,
+		input[type="submit"].btn{
+			width: 244px;
+			margin-top: 24px;
+			font-size: 14px;
+		}
+	}
+}

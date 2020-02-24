@@ -3,10 +3,10 @@
 .input-check{
 	&__label{
 		display: flex;
-		align-items: center;
+		// align-items: center;
 		cursor: pointer;
 		position: relative;
-		@include font(normal, normal, 14px, 1.2, #000);
+		@include font(normal, normal, 14px, 1.4, #000);
 		margin: 0;
 	}
 
@@ -21,6 +21,7 @@
 		border: 1px solid #dbdbdb;
 		background: transparent;
 		position: relative;
+		margin-top: 2px;
 	}
 
 	&__mark::after{

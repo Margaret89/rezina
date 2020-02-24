@@ -443,6 +443,9 @@ hr {
   .no-indent-last {
     margin-bottom: -30px;
   }
+  .head-page {
+    margin-top: 0;
+  }
 }
 
 /*-------------- Header -----------------*/
@@ -1834,15 +1837,12 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   cursor: pointer;
   position: relative;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.4;
   color: #000;
   margin: 0;
 }
@@ -1858,6 +1858,7 @@ hr {
   border: 1px solid #dbdbdb;
   background: transparent;
   position: relative;
+  margin-top: 2px;
 }
 
 .input-check__mark::after {
@@ -4437,6 +4438,76 @@ input[type=checkbox]:checked + .input-check__label .input-check__mark::after {
   margin: 0 auto;
 }
 
+.cart__price-label {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1229px) {
+  .cart__item_price {
+    width: 150px;
+  }
+  .cart__item_name {
+    width: calc(100% - 660px);
+  }
+}
+
+@media (max-width: 991px) {
+  .cart__item_price {
+    width: 120px;
+  }
+  .cart__item_count {
+    width: 150px;
+  }
+  .cart__item_name {
+    width: calc(100% - 580px);
+  }
+}
+
+@media (max-width: 767px) {
+  .cart__head {
+    display: none;
+  }
+  .cart__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -moz-text-align-last: auto;
+         text-align-last: auto;
+    position: relative;
+    padding: 16px 16px 7px;
+  }
+  .cart__item {
+    text-align: left;
+  }
+  .cart__item_img, .cart__item_name, .cart__item_count {
+    width: 100%;
+  }
+  .cart__item_price {
+    width: 50%;
+  }
+  .cart__item_del {
+    width: auto;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+  .cart .counter {
+    margin: 0;
+  }
+  .cart__row .cart__item {
+    padding: 0;
+  }
+  .cart__item_img {
+    margin-bottom: 6px;
+  }
+  .cart__item_name {
+    margin-bottom: 11px;
+  }
+  .cart__item_count {
+    margin-bottom: 12px;
+  }
+}
+
 /*-------------- form-site -----------------*/
 .form-site .container {
   padding-bottom: 95px;
@@ -4529,6 +4600,18 @@ input[type=checkbox]:checked + .input-check__label .input-check__mark::after {
   margin-top: 36px;
 }
 
+@media (max-width: 767px) {
+  .form-site__field {
+    width: 100%;
+  }
+  .form-site .btn,
+  .form-site input[type="submit"].btn {
+    width: 244px;
+    margin-top: 24px;
+    font-size: 14px;
+  }
+}
+
 /*-------------- order -----------------*/
 .order {
   margin-top: 30px;
@@ -4568,9 +4651,6 @@ input[type=checkbox]:checked + .input-check__label .input-check__mark::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .order-card__param:not(:last-child) {
@@ -4587,10 +4667,18 @@ input[type=checkbox]:checked + .input-check__label .input-check__mark::after {
   padding-left: 10px;
 }
 
-.order-card__param .input-check {
-  max-width: calc(100% - 100px);
-}
-
 .order-card .form-site {
   margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .order-card {
+    padding: 27px 24px;
+  }
+  .order-card__head {
+    margin-bottom: 24px;
+  }
+  .order-card__text {
+    margin-bottom: 18px;
+  }
 }
