@@ -173,11 +173,10 @@
 	&__title{
 		width: 170px;
 		color: #757575;
+		margin-right: 15px;
 	}
 
-	&__val{
-		margin-left: 30px;
-	}
+	&__val{margin-left: 15px;}
 }
 
 .catalog-card-type{
@@ -322,7 +321,8 @@
 			margin: 0 15px;
 		}
 
-		&__title{
+		&__title,
+		&__val{
 			width: 50%;
 		}
 	}
@@ -334,4 +334,122 @@
 
 .catalog-other{
 	margin-top: 60px;
+}
+
+@media (max-width: 1229px) {
+	.catalog-card-count{
+		&__note{width: 120px;}
+		&__num{width: calc(100% - 130px);}
+	}
+
+	.catalog-card-price{
+		&__note{width: 120px;}
+		&__num{width: calc(100% - 130px);}
+	}
+
+	.catalog-card-menu{
+		width: 120px;
+	}
+}
+
+@media (max-width: 991px) {
+	.catalog-card{
+		&__info .param__title{width: 40%;}
+		&__info .param__val{width: 60%;}
+	}
+
+	.catalog-card-count{
+		display: block;
+
+		&__note{width: 100%;}
+		&__num{width: 100%;}
+	}
+
+	.catalog-card-price{
+		display: block;
+
+		&__note{width: 100%;}
+		&__num{width: 100%;}
+	}
+
+	.catalog-card-menu{width: auto;}
+}
+
+@media (max-width: 767px) {
+	.product-slider{
+		flex-wrap: wrap;
+	}
+
+	.product-slide-img{
+		margin-left: -15px;
+		margin-right: -15px;
+		padding: 0;
+		width: calc(100% + 30px);
+
+		&__item{height: 320px;}
+
+		&__sale{
+			top: 15px;
+			right: 15px;
+		}
+	}
+
+	.product-slide-thumb{
+		width: 100%;
+		order: 1;
+		padding: 0;
+	}
+
+	.catalog-card{
+		&__name{
+			font-size: 22px;
+			margin-top: 18px;
+			margin-bottom: 10px;
+		}
+
+		&__info{
+			padding-top: 8px;
+			padding-bottom: 20px;
+
+			// .param__title,
+			// .param__val{
+			// 	width: 50%;
+			// }
+		}
+	}
+
+	.catalog-card-count{
+		margin-bottom: 21px;
+
+		&__note{margin-top: 8px; line-height: 1.4;}
+	}
+
+	.catalog-card-price{
+		margin-bottom: 24px;
+
+		&__old{margin-right: 6px;}
+		&__note{line-height: 1.4;}
+	}
+
+	.catalog-card-link{margin-top: 21px;}
+
+	.catalog-tabs{
+		.param{
+			display: block;
+			margin-left: -15px;
+			margin-right: -15px;
+			margin-top: 30px;
+		}
+
+		.param__item{
+			width: auto;
+			margin: 0;
+			padding: 22px 15px;
+		}
+
+		.param__title{margin-right: 8px;}
+		.param__val{margin-left: 8px;}
+	}
+
+	.catalog-previous, .catalog-other{margin-top: 27px;}
 }

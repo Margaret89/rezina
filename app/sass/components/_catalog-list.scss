@@ -153,11 +153,22 @@
 	}
 }
 
+@media (max-width: 991px) {
+	.catalog-list{
+		&_table &__item{width: calc(100% - 30px);}
+	}
+}
+
 @media (max-width: 767px) {
 	.catalog-list{
 		&__item{
 			width: calc(100% - 30px);
 			margin: 4px 15px;
 		}
+
+		&_table &__content{display: block;}
+		&_table &__img{margin-bottom: 20px;}
+		&_table &__img-wrap{width: 100%;}
+		&_table &__info{width: 100%; text-align: center;}
 	}
 }

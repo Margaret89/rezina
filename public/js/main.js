@@ -132,7 +132,7 @@ $(document).ready(function () {
 			{
 				breakpoint: 768,
 				settings: {
-					dots: true,
+					// dots: true,
 					vertical: false,
 				}
 			},
@@ -147,6 +147,32 @@ $(document).ready(function () {
 		arrows: true,
 		vertical: true,
 		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 4,
+					vertical: false,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 3,
+					vertical: false,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 420,
+				settings: {
+					slidesToShow: 2,
+					vertical: false,
+					arrows: false,
+				}
+			},
+		]
 	});
 
 // Счетчик

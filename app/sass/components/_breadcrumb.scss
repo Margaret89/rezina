@@ -41,5 +41,9 @@
 	.breadcrumb{
 		margin-top: 12px;
 		margin-bottom: 12px;
+
+		&__item_md-last::after{
+			display: none!important;
+		}
 	}
 }

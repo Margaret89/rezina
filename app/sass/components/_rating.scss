@@ -28,3 +28,14 @@
 		left: 0;
 	}
 }
+
+@media (max-width: 767px) {
+	.rating-wrap{
+		display: block;
+
+		&__text{
+			margin-left: 0;
+			margin-top: 10px;
+		}
+	}
+}
