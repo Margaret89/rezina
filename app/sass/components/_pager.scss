@@ -64,3 +64,12 @@
 		color: #fff;
 	}
 }
+
+@media (max-width: 767px) {
+	.pager{
+		margin: 12px 0;
+
+		&__item{display: none;}
+		&__item:nth-child(-n+3), &__item:last-child{display: inline-flex;}
+	}
+}

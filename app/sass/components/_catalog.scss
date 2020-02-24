@@ -58,3 +58,28 @@
 		margin-top: 55px;
 	}
 }
+
+@media (max-width: 767px) {
+	.cat-select{
+		display: block;
+
+		&__label{
+			margin-right: 0;
+			margin-bottom: 5px;
+		}
+	}
+
+	.catalog-action{
+		&__left{
+			.select2{
+				width: 186px!important;
+			}
+		}
+	}
+
+	.catalog{
+		&__bottom-text{
+			margin-top: 15px;
+		}
+	}
+}
