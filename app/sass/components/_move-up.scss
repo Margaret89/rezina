@@ -33,3 +33,22 @@
 		box-shadow: #ec8a18 0 0px 0px 40px inset;
 	}
 }
+
+@media (max-width: 1229px) {
+	.move-up{
+		right: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	.move-up{
+		width: 45px;
+		height: 45px;
+
+		&::after{
+			width: 20px;
+			height: 13px;
+			background-position: -95px -400px;
+		}
+	}
+}

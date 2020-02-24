@@ -70,3 +70,29 @@
 		color: $color-orange;
 	}
 }
+
+@media (max-width: 767px) {
+	.footer{
+		padding: 24px 0 45px;
+
+		&__head{
+			margin-bottom: 16px;
+		}
+
+		&__copyright{
+			margin-top: 18px;
+		}
+
+		&__copyright:before{
+			display: none;
+		}
+	}
+
+	.footer-menu{
+		margin-bottom: 23px;
+
+		&__item:not(:last-child){
+			margin-bottom: 13px;
+		}
+	}
+}

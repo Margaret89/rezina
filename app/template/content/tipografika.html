@@ -6,7 +6,7 @@
 	//= ../header/header-link.html
 	</head>
 
-	<body>
+	<body class="js-body">
 		<div class="wrapper">
 			//= ../header/header.html
 			<main>
@@ -134,6 +134,7 @@
 								<br>
 								<br>
 								<div class="h2">Нестандартный выпадающий список</div>
+
 								<select id="maker" class="select-site js-select" data-placeholder="Выбрать">
 									<option></option>
 									<option value="Amtel">Amtel</option>
@@ -142,14 +143,34 @@
 
 								<br>
 								<br>
+								<div class="select-dark">
+									<select id="maker2" class="select-site js-select" data-placeholder="Выбрать">
+										<option></option>
+										<option value="Amtel">Amtel</option>
+										<option value="Barum">Barum</option>
+									</select>
+								</div>
+
+								<br>
+								<br>
 								<br>
 								<div class="h2">Табуляция</div>
 								<div class="tabs-page js-tabs-page">
-									<ul class="tabs-page__list js-tabs-page-list">
+									<ul class="tabs-page__list js-tabs-page-list d-none d-md-flex">
 										<li class="tabs-page__item js-tabs-page-item" data-item="tab1">Вкладка 1</li>
 										<li class="tabs-page__item js-tabs-page-item" data-item="tab2">Вкладка 2</li>
 										<li class="tabs-page__item js-tabs-page-item" data-item="tab3">Вкладка 3</li>
 									</ul>
+
+									<div class="d-block d-md-none">
+										<div class="select-dark">
+											<select id="tab-offer" class="select-site js-select js-tab-select">
+												<option value="Последнее" data-item="tab1">Последнее</option>
+												<option value="Скидки" data-item="tab2">Скидки</option>
+												<option value="Популярные" data-item="tab3">Популярные</option>
+											</select>
+										</div>
+									</div>
 
 									<div class="tabs-page__content js-tabs-page-content">
 										<div id="tab1" class="tabs-page__content-item js-tabs-page-content-item js-tabs-page-content-item">

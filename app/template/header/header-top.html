@@ -1,30 +1,44 @@
-<div class="header-top">
+<div class="header-top js-header-top">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
 				<div class="header-top__content">
-					<nav class="top-menu">
-						<ul class="top-menu__list">
-							<li class="top-menu__item"><a href="#">Шины</a></li>
-							<li class="top-menu__item"><a href="#">Диски</a></li>
-							<li class="top-menu__item"><a href="#">Акции</a></li>
-							<li class="top-menu__item"><a href="#">Доставка</a></li>
-							<li class="top-menu__item"><a href="#">Блог</a></li>
-							<li class="top-menu__item"><a href="#">Возврат</a></li>
-							<li class="top-menu__item"><a href="#">Гарантии</a></li>
-							<li class="top-menu__item"><a href="#">Оплата</a></li>
-							<li class="top-menu__item"><a href="#">Контакты</a></li>
-						</ul>
+					<nav class="main-menu">
+						<span class="ic-hamburger js-open-menu d-inline-block d-md-none"><span></span></span>
+
+						<div class="main-menu__list-wrap js-main-menu-mobile">
+							<ul class="main-menu__list js-main-menu-list">
+								<li class="main-menu__item js-main-menu-item" data-item="0"><a href="#">Шины</a></li>
+								<li class="main-menu__item js-main-menu-item" data-item="1"><a href="#">Диски</a></li>
+								<li class="main-menu__item js-main-menu-item" data-item="2"><a href="#">Акции</a></li>
+								<li class="main-menu__item js-main-menu-item" data-item="3"><a href="#">Доставка</a></li>
+								<li class="main-menu__item js-main-menu-item" data-item="4"><a href="#">Блог</a></li>
+								<li class="main-menu__item js-main-menu-item" data-item="5"><a href="#">Возврат</a></li>
+								<li class="main-menu__item js-main-menu-item" data-item="6"><a href="#">Гарантии</a></li>
+								<li class="main-menu__item js-main-menu-item" data-item="7"><a href="#">Оплата</a></li>
+								<li class="main-menu__item js-main-menu-item" data-item="8"><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+
+						<div class="header-top__logo d-inline-block d-md-none">
+							<a href="#">
+								<img src="img/mobile-logo.png" alt="">
+							</a>
+						</div>
 					</nav>
 
 					<div class="header-top-btn">
-						<a href="#" class="header-top-btn__item">
+						<span class="header-top-btn__item js-btn-search d-inline-flex d-md-none">
+							<span class="header-top-btn__icon header-top-btn__icon_search"></span>
+						</span>
+
+						<a href="#" class="header-top-btn__item d-none d-md-inline-flex">
 							<span class="header-top-btn__icon header-top-btn__icon_wish"></span>
 						</a>
 
 						<div class="header-top-btn__item">
 							<div class="small-basket">
-								<div class="small-basket__icon"><span class="small-basket__num">2</span></div>
+								<a href="#" class="small-basket__icon"><span class="small-basket__num">2</span></a>
 
 								<div class="small-basket__content">
 									<div class="small-basket__list">
@@ -66,6 +80,21 @@
 						<a href="#" class="header-top-btn__item">
 							<span class="header-top-btn__icon header-top-btn__icon_profile"></span>
 						</a>
+
+						<span class="header-top-btn__item js-btn-call d-inline-flex d-md-none">
+							<span class="header-top-btn__icon header-top-btn__icon_call"></span>
+						</span>
+					</div>
+
+					<div class="header-top__close">
+						<span class="ic-hamburger active js-close d-inline-block d-md-none"><span></span></span>
+					</div>
+
+					<div class="header-top__search js-header-top-search">
+						<form class="search-form search-form_white">
+							<input type="text" name="search" placeholder="Поиск по сайту">
+							<input type="submit" value="Поиск">
+						</form>
 					</div>
 				</div>
 			</div>

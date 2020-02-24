@@ -8,3 +8,15 @@
 		margin-bottom: 33px;
 	}
 }
+
+@media (max-width: 767px) {
+	.new-product{
+		margin-top: 25px;
+		margin-bottom: 25px;
+
+		h1,
+		.h1{
+			margin-bottom: 18px;
+		}
+	}
+}

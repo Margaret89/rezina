@@ -86,11 +86,18 @@
 
 .select2-container--default .select2-results__option[aria-disabled="true"]{color: #e5e5e5}
 
-@media (max-width: 767px) {
-	.select2-container .select2-selection--single,
-	.select2-container--default .select2-selection--single .select2-selection__rendered{
-		height: 54px;
-		font-size: 20px;
-		line-height: 52px;
+.select-dark{
+	.select2-container .select2-selection--single{
+		background: $color-blue;
+		color: #fff
+	}
+
+	.select2-container--default .select2-selection--single .select2-selection__rendered,
+	.select2-container--default .select2-selection--single .select2-selection__placeholder{
+		color: #fff;
+	}
+
+	.select2-container--default .select2-selection--single .select2-selection__arrow b{
+		background-position: -40px -265px;
 	}
 }

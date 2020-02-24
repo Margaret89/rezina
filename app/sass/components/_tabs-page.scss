@@ -74,3 +74,11 @@
 		display: none;
 	}
 }
+
+@media (max-width: 767px) {
+	.tabs-page{
+		&__content{
+			margin-top: 18px;
+		}
+	}
+}

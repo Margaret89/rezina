@@ -8,3 +8,14 @@
 		margin: 5px 0 55px;
 	}
 }
+
+@media (max-width: 767px) {
+	.popular-block{
+		padding-top: 22px;
+		padding-bottom: 15px;
+
+		.slider-offer{
+			margin-bottom: 8px;
+		}
+	}
+}

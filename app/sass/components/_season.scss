@@ -1,7 +1,6 @@
 /*-------------- season -----------------*/
 .season-wrap{
 	padding-top: 75px;
-	padding-bottom: 38px;
 
 	h1,
 	.h1{
@@ -18,7 +17,7 @@
 		border: 1px solid #dbdbdb;
 		border-top: 0;
 		position: relative;
-		margin-bottom: 30px;
+		margin-bottom: 68px;
 		text-decoration: none;
 		transition: all 0.3s ease 0s;
 	}
@@ -90,5 +89,29 @@
 		animation-duration: 4s;
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
+	}
+}
+
+@media (max-width: 767px) {
+	.season-wrap{
+		padding-top: 28px;
+		padding-bottom: 18px;
+
+		h1,
+		.h1{
+			margin-bottom: 15px;
+		}
+	}
+
+	.season-list{
+		margin-top: 0;
+
+		&__item{
+			padding: 0 22px 33px;
+			margin-bottom: 0;
+			margin-top: 65px;
+		}
+		
+		&__img{margin-left: 17px;}
 	}
 }

@@ -66,3 +66,29 @@
 		}
 	}
 }
+
+@media (max-width: 767px) {
+	.article-wrap{
+		padding-top: 27px;
+		padding-bottom: 30px;
+
+		h1,
+		.h1{
+			margin-bottom: 20px;
+		}
+	}
+
+	.article{
+		&__item{
+			margin-bottom: 24px;
+		}
+
+		&__btn{
+			margin-top: 2px;
+		}
+
+		.btn{
+			width: 290px;
+		}
+	}
+}

@@ -38,4 +38,16 @@
 	input[type="text"]:focus{
 		border-color:$color-orange;
 	}
+
+	&_white{
+		input[type="text"]{
+			border: 1px solid $color-blue;
+			background: transparent;
+			color: #fff;
+		}
+
+		input[type="text"]::placeholder{color: $color-grey;}
+		input[type="submit"]{background-position: -75px -235px;}
+		input[type="submit"]:hover{background-position: -100px -235px;}
+	}
 }

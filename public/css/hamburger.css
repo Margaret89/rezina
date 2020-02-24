@@ -1,0 +1,112 @@
+/*----------- Hamburger -------------*/
+.ic-hamburger {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 5px 15px;
+	width: 44px;
+	height: 24px;
+	font-size: 0;
+	text-indent: -9999px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	border: none;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.ic-hamburger:focus {
+	outline: none;
+}
+
+.ic-hamburger span {
+	display: block;
+	width: calc(100% - 34px);
+	position: absolute;
+	top: 11px;
+	right: 15px;
+	height: 2px;
+	background: #a3a6ad;
+}
+
+.ic-hamburger span::before,
+.ic-hamburger span::after {
+	content: "";
+	position: absolute;
+	display: block;
+	right: 0;
+	width: calc(100% + 4px);
+	height: 2px;
+	background-color: #a3a6ad;
+}
+
+.ic-hamburger span::before {
+	top: -6px;
+}
+
+.ic-hamburger span::after {
+	bottom: -6px;
+}
+
+.ic-hamburgerspan {
+	transition: background 0s 0.3s;
+}
+
+.ic-hamburger span::before,
+.ic-hamburger span::after {
+	transition-duration: 0.3s, 0.3s;
+	transition-delay: 0.3s, 0s;
+}
+
+.ic-hamburger span::before {
+	transition-property: top, transform;
+}
+
+.ic-hamburger span::after {
+	transition-property: bottom, transform;
+}
+
+.ic-hamburger.active{
+	width: 48px;
+	height: 46px;
+}
+
+.ic-hamburger.active span,
+.ic-hamburger.active span::before,
+.ic-hamburger.active span::after{
+	height: 1px;
+}
+
+.ic-hamburger.active span {
+	background: none;
+	top: 23px;
+}
+
+.ic-hamburger.active span::before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.ic-hamburger.active span::after {
+	bottom: 0;
+	transform: rotate(-45deg);
+}
+
+.ic-hamburger.active span::before,
+.ic-hamburger.active span::after {
+	transition-delay: 0s, 0.3s;
+/*	background-color: #fff;*/
+}
+
+/*.ic-hamburger:hover span,
+.ic-hamburger:hover span::before,
+.ic-hamburger:hover span::after{
+	background-color: #fff;
+}*/
+
+.ic-hamburger.active:hover span{
+	background-color: transparent;
+}

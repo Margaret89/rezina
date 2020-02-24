@@ -35,3 +35,36 @@
 		@include font(normal, normal, 14px, 1.5, #757575);
 	}
 }
+
+@media (max-width: 991px) {
+	.advant-list{
+		&__item{width: 50%;}
+	}
+}
+
+@media (max-width: 767px) {
+	.advant-wrap{
+		margin-top: 23px;
+		margin-bottom: 15px;
+		
+		h1,
+		.h1{
+			margin-bottom: 20px;
+		}
+	}
+
+	.advant-list{
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-bottom: 23px;
+
+		&__item{
+			width: auto;
+			padding: 31px 38px 23px;
+		}
+
+		&__text{
+			line-height: 1.57;
+		}
+	}
+}
